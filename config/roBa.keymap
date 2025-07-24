@@ -19,7 +19,6 @@
     //         <&kp LEFT_ARROW>,
     //         <&kp UP_ARROW>,
     //         <&kp DOWN_ARROW>;
-
     //     tick = <10>;
     //     wait-ms = <5>;
     //     tap-ms = <5>;
@@ -30,29 +29,34 @@
     combos {
         compatible = "zmk,combos";
 
-        tab {
-            bindings = <&kp TAB>;
-            key-positions = <11 12>;
+        right_alt {
+            bindings = <&kp RALT>;
+            key-positions = <7 8>;
         };
 
-        shift_tab {
-            bindings = <&kp LS(TAB)>;
-            key-positions = <12 13>;
+        right_ctrl {
+            bindings = <&kp RCTRL>;
+            key-positions = <31 32>;
         };
 
-        muhennkann {
-            bindings = <&to_layer_0 INT_MUHENKAN>;
+        minus {
+            bindings = <&kp MINUS>;
+            key-positions = <19 20>;
+        };
+
+        eng {
+            bindings = <&kp LANG2>;
             key-positions = <11 10>;
         };
 
-        double_quotation {
-            bindings = <&kp DOUBLE_QUOTES>;
+        ja {
+            bindings = <&kp LANGUAGE_1>;
             key-positions = <20 21>;
         };
 
-        eq {
+        equal {
             bindings = <&kp EQUAL>;
-            key-positions = <24 25>;
+            key-positions = <18 19>;
         };
     };
 
@@ -81,10 +85,10 @@
 
         default_layer {
             bindings = <
-&kp Q             &kp W         &kp E         &kp R                        &kp T                                                          &kp Y        &kp U  &lt 5 I    &kp O    &kp P
-&kp A             &kp S         &kp D         &kp F                        &kp G        &kp LS(LG(S))                      &kp MINUS      &kp H        &kp J  &kp K      &kp L    &kp SQT
-&mt LEFT_SHIFT Z  &kp X         &kp C         &kp V                        &kp B        &kp COLON                          &kp SEMICOLON  &kp N        &kp M  &kp COMMA  &kp DOT  &kp SLASH
-&kp LCTRL         &kp LEFT_WIN  &kp LEFT_ALT  &lt_to_layer_0 6 INT_HENKAN  &lt 2 SPACE  &lt_to_layer_0 3 INT_MUHENKAN      &kp BACKSPACE  &lt 1 ENTER                             &kp DEL
+&kp Q         &kp W     &kp U     &kp Q           &kp DELETE                                      &kp BACKSPACE  &kp M  &kp R  &kp G  &kp D
+&mt LSHIFT A  &kp I     &kp E     &kp O           &kp F        &kp LS(LG(S))         &kp APOS     &kp H          &kp J  &kp K  &kp L  &mt RSHIFT Y
+&kp SEMI      &kp X     &kp C     &kp V           &kp B        &kp COMMA             &kp PERIOD   &kp P          &kp N  &kp T  &kp S  &kp Z
+&sk LCTRL     &sk LALT  &sk LCMD  &mt LSHIFT TAB  &lt 2 SPACE  &lt 1 LANGUAGE_2      &lt 3 LANG1  &lt 2 ENTER                         &lt 5 TAB
             >;
 
             sensor-bindings = <&inc_dec_kp PG_UP PAGE_DOWN>;
@@ -101,10 +105,10 @@
 
         NUM {
             bindings = <
-&kp MINUS                   &kp KP_NUMBER_7  &kp KP_NUMBER_8  &kp KP_NUMBER_9  &kp PLUS                                                   &kp CARET         &kp AMPERSAND      &kp TILDE       &kp LEFT_PARENTHESIS  &kp RIGHT_PARENTHESIS
-&kp SLASH                   &kp KP_NUMBER_4  &kp KP_NUMBER_5  &kp KP_NUMBER_6  &kp ASTERISK  &kp LC(LA(KP_NUMBER_0))      &kp UNDERSCORE  &kp EXCLAMATION   &kp AT_SIGN        &kp HASH        &kp DOLLAR            &kp PERCENT
-&mt LEFT_SHIFT KP_NUMBER_0  &kp KP_NUMBER_1  &kp KP_NUMBER_2  &kp KP_NUMBER_3  &kp PERIOD    &kp EQUAL                    &trans          &kp LEFT_BRACKET  &kp RIGHT_BRACKET  &kp LEFT_BRACE  &kp RIGHT_BRACE       &kp BACKSLASH
-&trans                      &trans           &trans           &trans           &trans        &trans                       &trans          &trans                                                                     &kp PIPE
+&kp MINUS                   &kp KP_NUMBER_7  &kp KP_NUMBER_8  &kp KP_NUMBER_9  &kp PLUS                                           &kp STAR   &kp KP_N7  &kp KP_N8  &kp KP_N9  &kp SLASH
+&kp SLASH                   &kp KP_NUMBER_4  &kp KP_NUMBER_5  &kp KP_NUMBER_6  &kp ASTERISK  &kp LC(LA(KP_NUMBER_0))      &trans  &kp COLON  &kp KP_N4  &kp KP_N5  &kp KP_N6  &kp KP_N0
+&mt LEFT_SHIFT KP_NUMBER_0  &kp KP_NUMBER_1  &kp KP_NUMBER_2  &kp KP_NUMBER_3  &kp PERIOD    &kp EQUAL                    &trans  &kp PLUS   &kp KP_N1  &kp KP_N2  &kp KP_N3  &kp MINUS
+&trans                      &trans           &trans           &trans           &trans        &trans                       &trans  &trans                                      &kp PIPE
             >;
         };
 
@@ -143,6 +147,15 @@
 &trans  &trans        &trans        &trans        &trans  &trans      &trans       &trans        &trans        &trans        &trans        &trans
 &trans  &kp NUMBER_1  &kp NUMBER_2  &kp NUMBER_3  &trans  &trans      &bootloader  &trans        &trans        &trans        &trans        &bt BT_CLR
 &trans  &trans        &trans        &trans        &trans  &trans      &trans       &trans                                                  &bt BT_CLR_ALL
+            >;
+        };
+
+        layer_7 {
+            bindings = <
+&trans    &kp QMARK  &trans    &trans    &trans                         &trans     &trans    &trans         &kp LPAR  &kp RPAR
+&kp EXCL  &kp AT     &kp HASH  &kp DLLR  &kp PRCNT  &trans      &trans  &kp CARET  &kp AMPS  &kp STAR       &kp LBKT  &kp RBKT
+&trans    &trans     &trans    &trans    &trans     &trans      &trans  &trans     &kp PIPE  &kp BACKSLASH  &kp LBRC  &kp RBRC
+&trans    &trans     &trans    &trans    &trans     &trans      &trans  &trans                                        &trans
             >;
         };
     };
