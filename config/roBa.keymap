@@ -85,22 +85,13 @@
 
         default_layer {
             bindings = <
-&kp Q         &kp W     &kp U     &kp Q           &kp DELETE                                      &kp BACKSPACE  &kp M  &kp R  &kp G  &kp D
+&kp ESC       &kp W     &kp U     &kp Q           &kp DELETE                                      &kp BACKSPACE  &kp M  &kp R  &kp G  &kp D
 &mt LSHIFT A  &kp I     &kp E     &kp O           &kp F        &kp LS(LG(S))         &kp APOS     &kp H          &kp J  &kp K  &kp L  &mt RSHIFT Y
 &kp SEMI      &kp X     &kp C     &kp V           &kp B        &kp COMMA             &kp PERIOD   &kp P          &kp N  &kp T  &kp S  &kp Z
-&sk LCTRL     &sk LALT  &sk LCMD  &mt LSHIFT TAB  &lt 2 SPACE  &lt 1 LANGUAGE_2      &lt 3 LANG1  &lt 2 ENTER                         &lt 5 TAB
+&sk LCTRL     &sk LALT  &sk LCMD  &mt LSHIFT TAB  &lt 3 SPACE  &lt 4 LANGUAGE_2      &lt 2 LANG1  &lt 1 ENTER                         &lt 7 TAB
             >;
 
             sensor-bindings = <&inc_dec_kp PG_UP PAGE_DOWN>;
-        };
-
-        FUNCTION {
-            bindings = <
-&trans  &trans  &trans  &trans  &trans                       &kp F1  &kp F2  &kp F3  &kp F4  &kp F5
-&trans  &trans  &trans  &trans  &trans  &trans      &kp F13  &kp F6  &kp F7  &kp F8  &kp F9  &kp F10
-&trans  &trans  &trans  &trans  &trans  &trans      &trans   &trans  &trans  &trans  &trans  &kp F11
-&trans  &trans  &trans  &trans  &trans  &trans      &trans   &trans                          &kp F12
-            >;
         };
 
         NUM {
@@ -123,6 +114,24 @@
             sensor-bindings = <&inc_dec_kp LC(PAGE_UP) LC(PAGE_DOWN)>;
         };
 
+        SIGN {
+            bindings = <
+&trans    &kp QMARK  &trans    &trans    &trans                         &trans     &trans    &trans         &kp LPAR  &kp RPAR
+&kp EXCL  &kp AT     &kp HASH  &kp DLLR  &kp PRCNT  &trans      &trans  &kp CARET  &kp AMPS  &kp STAR       &kp LBKT  &kp RBKT
+&trans    &trans     &trans    &trans    &trans     &trans      &trans  &trans     &kp PIPE  &kp BACKSLASH  &kp LBRC  &kp RBRC
+&trans    &trans     &trans    &trans    &trans     &trans      &trans  &trans                                        &trans
+            >;
+        };
+
+        FUNCTION {
+            bindings = <
+&trans  &trans  &trans  &trans  &trans                       &kp F1  &kp F2  &kp F3  &kp F4  &kp F5
+&trans  &trans  &trans  &trans  &trans  &trans      &kp F13  &kp F6  &kp F7  &kp F8  &kp F9  &kp F10
+&trans  &trans  &trans  &trans  &trans  &trans      &trans   &trans  &trans  &trans  &trans  &kp F11
+&trans  &trans  &trans  &trans  &trans  &trans      &trans   &trans                          &kp F12
+            >;
+        };
+
         MOUSE {
             bindings = <
 &trans  &trans  &trans  &trans  &trans                      &trans  &trans    &trans    &trans    &trans
@@ -141,21 +150,12 @@
             >;
         };
 
-        layer_6 {
+        BLUETOOTH {
             bindings = <
 &trans  &trans        &trans        &trans        &trans                           &bt BT_SEL 0  &bt BT_SEL 1  &bt BT_SEL 2  &bt BT_SEL 3  &bt BT_SEL 4
 &trans  &trans        &trans        &trans        &trans  &trans      &trans       &trans        &trans        &trans        &trans        &trans
 &trans  &kp NUMBER_1  &kp NUMBER_2  &kp NUMBER_3  &trans  &trans      &bootloader  &trans        &trans        &trans        &trans        &bt BT_CLR
 &trans  &trans        &trans        &trans        &trans  &trans      &trans       &trans                                                  &bt BT_CLR_ALL
-            >;
-        };
-
-        layer_7 {
-            bindings = <
-&trans    &kp QMARK  &trans    &trans    &trans                         &trans     &trans    &trans         &kp LPAR  &kp RPAR
-&kp EXCL  &kp AT     &kp HASH  &kp DLLR  &kp PRCNT  &trans      &trans  &kp CARET  &kp AMPS  &kp STAR       &kp LBKT  &kp RBKT
-&trans    &trans     &trans    &trans    &trans     &trans      &trans  &trans     &kp PIPE  &kp BACKSLASH  &kp LBRC  &kp RBRC
-&trans    &trans     &trans    &trans    &trans     &trans      &trans  &trans                                        &trans
             >;
         };
     };
