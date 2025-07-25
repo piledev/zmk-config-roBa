@@ -36,27 +36,22 @@
 
         right_ctrl {
             bindings = <&kp RCTRL>;
-            key-positions = <31 32>;
-        };
-
-        minus {
-            bindings = <&kp MINUS>;
             key-positions = <20 21>;
-        };
-
-        equal {
-            bindings = <&kp EQUAL>;
-            key-positions = <18 19>;
         };
 
         right_gui {
             bindings = <&kp RGUI>;
-            key-positions = <7 8>;
+            key-positions = <18 19>;
         };
 
-        layer6 {
-            bindings = <&lt 7 CAPS>;
-            key-positions = <39 40>;
+        minus {
+            bindings = <&kp MINUS>;
+            key-positions = <8 9 8 9 8 9 8 9>;
+        };
+
+        equal {
+            bindings = <&kp EQUAL>;
+            key-positions = <7 8 7 8 8 8 7 8 7 8>;
         };
     };
 
@@ -85,35 +80,35 @@
 
         default_layer {
             bindings = <
-&kp ESC          &kp W     &kp U     &kp Q                 &kp COLON                                   &kp P        &kp M  &kp R  &kp G  &kp D
-&lt 4 A          &kp I     &kp E     &kp O                 &kp F        &kp LS(LG(S))      &kp APOS    &kp H        &kp J  &kp K  &kp L  &lt 5 Y
-&mt RSHIFT SEMI  &kp X     &kp C     &kp V                 &kp SLASH    &kp COMMA          &kp PERIOD  &kp B        &kp N  &kp T  &kp S  &mt RSHIFT Z
-&sk LCTRL        &sk LALT  &sk LCMD  &mt LSHIFT LC(SPACE)  &lt 3 SPACE  &lt 6 TAB          &lt 1 BSPC  &lt 2 ENTER                       &kp TAB
+&kp ESC       &kp W     &kp U     &kp Q                 &kp SLASH                                   &kp GRAVE    &kp M  &kp R  &kp G  &kp D
+&mt LSHIFT A  &kp I     &kp E     &kp O                 &kp F        &kp LG(KP_N0)      &kp APOS    &kp H        &kp J  &kp K  &kp L  &mt RIGHT_SHIFT Y
+&lt 4 SEMI    &kp X     &kp C     &kp V                 &kp B        &kp COMMA          &kp PERIOD  &kp P        &kp N  &kp T  &kp S  &lt 5 Z
+&sk LCTRL     &sk LALT  &sk LCMD  &mt LSHIFT LC(SPACE)  &lt 3 SPACE  &lt 6 TAB          &lt 2 TAB   &lt 1 ENTER                       &kp BSPC
             >;
 
             sensor-bindings = <&inc_dec_kp LG(MINUS) LG(EQUAL)>;
         };
 
-        NUM {
+        ARROW {
             bindings = <
-&kp LG(KP_N1)  &kp LG(KP_N2)  &kp LG(KP_N3)    &kp LG(KP_N4)  &kp LG(KP_N5)                          &kp LG(KP_N6)  &kp LG(KP_N7)  &kp LG(KP_N8)  &kp LG(KP_N9)  &kp LG(KP_N0)
-&kp KP_N1      &kp KP_N2      &kp KP_NUMBER_3  &kp KP_N4      &kp KP_N5      &kp K_MUTE      &trans  &kp KP_N6      &kp KP_N7      &kp KP_N8      &kp KP_N9      &kp KP_N0
-&kp COLON      &none          &none            &none          &none          &trans          &trans  &none          &none          &none          &kp BSPC       &kp DEL
-&trans         &trans         &trans           &trans         &trans         &trans          &trans  &trans                                                      &trans
+&none   &none         &none         &none       &none                                  &kp LG(LEFT)  &kp LG(DOWN)  &kp LG(UP)  &kp LG(RIGHT)  &none
+&none   &kp LA(LEFT)  &kp LA(DOWN)  &kp LA(UP)  &kp LA(RIGHT)  &kp K_MUTE      &trans  &kp LEFT      &kp DOWN      &kp UP      &kp RIGHT      &none
+&none   &none         &none         &none       &none          &trans          &trans  &kp LC(LEFT)  &kp LC(DOWN)  &kp LC(UP)  &kp LC(RIGHT)  &none
+&trans  &trans        &trans        &trans      &trans         &trans          &trans  &trans                                                 &kp DEL
             >;
 
             sensor-bindings = <&inc_dec_kp C_VOL_DN C_VOL_UP>;
         };
 
-        ARROW {
+        NUM {
             bindings = <
-&none   &none         &none         &none       &none                                     &kp LG(LEFT)  &kp LG(DOWN)  &kp LG(UP)  &kp LG(RIGHT)  &none
-&none   &kp LA(LEFT)  &kp LA(DOWN)  &kp LA(UP)  &kp LA(RIGHT)  &kp LG(KP_N0)      &trans  &kp LEFT      &kp DOWN      &kp UP      &kp RIGHT      &none
-&none   &none         &none         &none       &none          &kp LG(EQUAL)      &trans  &kp LC(LEFT)  &kp LC(DOWN)  &kp LC(UP)  &kp LC(RIGHT)  &none
-&trans  &trans        &trans        &trans      &trans         &trans             &trans  &trans                                                 &trans
+&kp LG(KP_N1)  &kp LG(KP_N2)  &kp LG(KP_N3)    &kp LG(KP_N4)  &kp LG(KP_N5)                             &kp LG(KP_N6)  &kp LG(KP_N7)  &kp LG(KP_N8)  &kp LG(KP_N9)  &kp LG(KP_N0)
+&kp KP_N1      &kp KP_N2      &kp KP_NUMBER_3  &kp KP_N4      &kp KP_N5      &kp K_MUTE      &kp EQUAL  &kp KP_N6      &kp KP_N7      &kp KP_N8      &kp KP_N9      &kp KP_N0
+&kp COLON      &kp MINUS      &kp PLUS         &kp SLASH      &kp ASTERISK   &trans          &trans     &none          &none          &none          &none          &none
+&trans         &trans         &trans           &trans         &trans         &trans          &trans     &trans                                                      &trans
             >;
 
-            sensor-bindings = <&inc_dec_kp LG(MINUS) LG(PLUS)>;
+            sensor-bindings = <&inc_dec_kp C_VOL_DN C_VOL_UP>;
         };
 
         SIGN {
@@ -121,19 +116,17 @@
 &none     &kp QMARK  &none     &none     &none                             &none      &none     &none          &kp LPAR  &kp RPAR
 &kp EXCL  &kp AT     &kp HASH  &kp DLLR  &kp PRCNT  &trans      &kp GRAVE  &kp CARET  &kp AMPS  &kp STAR       &kp LBKT  &kp RBKT
 &none     &none      &none     &none     &none      &trans      &trans     &none      &kp PIPE  &kp BACKSLASH  &kp LBRC  &kp RBRC
-&trans    &trans     &trans    &trans    &trans     &trans      &kp DEL    &trans                                        &trans
+&trans    &trans     &trans    &trans    &trans     &trans      &trans     &trans                                        &trans
             >;
         };
 
         MOUSE {
             bindings = <
-&trans  &trans  &trans  &trans  &trans                             &trans  &trans    &trans    &trans    &trans
-&trans  &trans  &trans  &trans  &trans  &kp LG(KP_N0)      &trans  &trans  &mkp MB1  &mkp MB5  &mkp MB2  &trans
-&trans  &trans  &trans  &trans  &trans  &trans             &trans  &trans  &mkp MB1  &mkp MB4  &mkp MB2  &trans
-&trans  &trans  &trans  &trans  &trans  &trans             &trans  &trans                                &trans
+&trans  &trans  &trans  &trans  &trans                      &trans  &trans    &trans    &trans    &trans
+&trans  &trans  &trans  &trans  &trans  &none       &trans  &trans  &mkp MB1  &mkp MB5  &mkp MB2  &trans
+&trans  &trans  &trans  &trans  &trans  &trans      &trans  &trans  &mkp MB1  &mkp MB4  &mkp MB2  &trans
+&trans  &trans  &trans  &trans  &trans  &trans      &trans  &trans                                &trans
             >;
-
-            sensor-bindings = <&inc_dec_kp C_AC_ZOOM_OUT C_AC_ZOOM_IN>;
         };
 
         SCROLL {
@@ -147,10 +140,10 @@
 
         FUNCTION {
             bindings = <
-&trans  &trans  &trans  &trans  &trans                       &kp F1  &kp F2  &kp F3  &kp F4  &kp F5
-&trans  &trans  &trans  &trans  &trans  &trans      &kp F13  &kp F6  &kp F7  &kp F8  &kp F9  &kp F10
-&trans  &trans  &trans  &trans  &trans  &trans      &trans   &trans  &trans  &trans  &trans  &kp F11
-&trans  &trans  &trans  &trans  &trans  &trans      &trans   &trans                          &kp F12
+&trans  &trans  &trans  &trans  &trans                        &kp F1      &kp F2        &kp F3        &kp F4  &kp F5
+&trans  &trans  &trans  &trans  &trans  &trans      &kp CAPS  &kp F6      &kp F7        &kp F8        &kp F9  &kp F10
+&trans  &trans  &trans  &trans  &trans  &trans      &trans    &kp K_MUTE  &kp C_VOL_DN  &kp C_VOL_UP  &trans  &kp F11
+&trans  &trans  &trans  &trans  &trans  &trans      &trans    &trans                                          &kp F12
             >;
         };
 
@@ -161,6 +154,15 @@
 &trans  &kp NUMBER_1  &kp NUMBER_2  &kp NUMBER_3  &trans  &trans      &bootloader  &trans        &trans        &trans        &trans        &bt BT_CLR
 &trans  &trans        &trans        &trans        &trans  &trans      &trans       &trans                                                  &bt BT_CLR_ALL
             >;
+        };
+    };
+
+    conditional_layers {
+        compatible = "zmk,conditional-layers";
+
+        bluetooth {
+            if-layers = <2 6>;
+            then-layer = <7>;
         };
     };
 };
