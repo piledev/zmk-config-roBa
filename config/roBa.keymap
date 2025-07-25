@@ -85,9 +85,9 @@
 
         default_layer {
             bindings = <
-&kp ESC          &kp W     &kp U     &kp Q                 &kp DELETE                                  &kp P        &kp M  &kp R  &kp G  &kp D
+&kp ESC          &kp W     &kp U     &kp Q                 &kp COLON                                   &kp P        &kp M  &kp R  &kp G  &kp D
 &lt 4 A          &kp I     &kp E     &kp O                 &kp F        &kp LS(LG(S))      &kp APOS    &kp H        &kp J  &kp K  &kp L  &lt 5 Y
-&mt RSHIFT SEMI  &kp X     &kp C     &kp V                 &kp P        &kp COMMA          &kp PERIOD  &kp B        &kp N  &kp T  &kp S  &mt RSHIFT Z
+&mt RSHIFT SEMI  &kp X     &kp C     &kp V                 &kp SLASH    &kp COMMA          &kp PERIOD  &kp B        &kp N  &kp T  &kp S  &mt RSHIFT Z
 &sk LCTRL        &sk LALT  &sk LCMD  &mt LSHIFT LC(SPACE)  &lt 3 SPACE  &lt 6 TAB          &lt 1 BSPC  &lt 2 ENTER                       &kp TAB
             >;
 
@@ -121,7 +121,7 @@
 &none     &kp QMARK  &none     &none     &none                             &none      &none     &none          &kp LPAR  &kp RPAR
 &kp EXCL  &kp AT     &kp HASH  &kp DLLR  &kp PRCNT  &trans      &kp GRAVE  &kp CARET  &kp AMPS  &kp STAR       &kp LBKT  &kp RBKT
 &none     &none      &none     &none     &none      &trans      &trans     &none      &kp PIPE  &kp BACKSLASH  &kp LBRC  &kp RBRC
-&trans    &trans     &trans    &trans    &trans     &trans      &trans     &trans                                        &trans
+&trans    &trans     &trans    &trans    &trans     &trans      &kp DEL    &trans                                        &trans
             >;
         };
 
