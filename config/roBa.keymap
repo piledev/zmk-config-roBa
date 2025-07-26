@@ -79,8 +79,8 @@
         default_layer {
             bindings = <
 &kp ESC       &kp W     &kp U     &kp F      &kp Q                                               &kp Z        &kp M  &kp R  &kp G    &kp P
-&mt LSHIFT A  &lt 4 I   &kp E     &kp O      &kp SEMI     &kp LG(KP_N0)         &kp SQT          &kp D        &kp T  &kp N  &lt 5 S  &mt RIGHT_SHIFT Y
-&kp SLASH     &kp X     &kp C     &kp V      &kp GRAVE    &kp COMMA             &kp PERIOD       &kp B        &kp H  &kp J  &kp K    &kp L
+&mt LSHIFT A  &lt 4 I   &kp E     &kp O      &kp SEMI     &kp LG(KP_N0)         &kp GRAVE        &kp D        &kp T  &kp N  &lt 5 S  &mt RIGHT_SHIFT Y
+&kp SLASH     &kp X     &kp C     &kp V      &kp SQT      &kp COMMA             &kp PERIOD       &kp B        &kp H  &kp J  &kp K    &kp L
 &sk LCTRL     &sk LALT  &sk LCMD  &lt 3 TAB  &lt 2 SPACE  &mt LSHIFT LANG2      &mt RSHFT LANG1  &lt 1 ENTER                         &kp MINUS
             >;
 
@@ -100,10 +100,10 @@
 
         SIGN {
             bindings = <
-&none     &kp QMARK  &none     &none     &none                            &none         &kp PIPE  &kp KP_MINUS  &kp LPAR  &kp RPAR
-&kp EXCL  &kp AT     &kp HASH  &kp DLLR  &kp PRCNT  &trans      &kp BSLH  &kp CARET     &kp AMPS  &kp STAR      &kp LBKT  &kp RBKT
-&none     &none      &none     &none     &none      &trans      &trans    &kp KP_EQUAL  &kp LT    &kp GT        &kp LBRC  &kp RBRC
-&trans    &trans     &trans    &trans    &trans     &trans      &trans    &trans                                          &trans
+&none          &kp QMARK  &none     &none     &none                             &none         &kp PIPE  &kp KP_MINUS  &kp LPAR  &kp RPAR
+&kp EXCL       &kp AT     &kp HASH  &kp DLLR  &kp PRCNT  &trans      &kp TILDE  &kp CARET     &kp AMPS  &kp STAR      &kp LBKT  &kp RBKT
+&kp BACKSLASH  &none      &none     &none     &none      &trans      &trans     &kp KP_EQUAL  &kp LT    &kp GT        &kp LBRC  &kp RBRC
+&trans         &trans     &trans    &trans    &trans     &trans      &trans     &trans                                          &trans
             >;
         };
 
