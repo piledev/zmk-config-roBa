@@ -73,10 +73,10 @@
 
         default_layer {
             bindings = <
-&kp ESC       &kp W     &kp U     &kp F        &kp Q                                               &kp Z        &kp M  &kp R  &kp G    &kp P
-&mt LSHIFT A  &lt 4 I   &kp E     &kp O        &kp SQT      &kp LG(KP_N0)         &kp GRAVE        &kp D        &kp T  &kp N  &lt 5 S  &mt RIGHT_SHIFT Y
-&kp TAB       &kp X     &kp C     &kp V        &kp SLASH    &kp COMMA             &kp DOT          &kp B        &kp H  &kp J  &kp K    &kp L
-&sk LCTRL     &sk LALT  &sk LCMD  &lt 3 MINUS  &lt 2 LANG2  &mt LSHIFT SPACE      &mt RSHFT ENTER  &lt 1 LANG1                         &lt 4 SEMI
+&kp ESC       &kp W     &kp U     &kp F      &kp Q                                               &kp Z        &kp M  &kp R  &kp G    &kp P
+&mt LSHIFT A  &lt 4 I   &kp E     &kp O      &kp SQT      &kp LG(KP_N0)         &kp GRAVE        &kp D        &kp T  &kp N  &lt 5 S  &mt RIGHT_SHIFT Y
+&kp MINUS     &kp X     &kp C     &kp V      &kp SLASH    &kp COMMA             &kp DOT          &kp B        &kp H  &kp J  &kp K    &kp L
+&sk LCTRL     &sk LALT  &sk LCMD  &lt 3 TAB  &lt 2 LANG2  &mt LSHIFT SPACE      &mt RSHFT ENTER  &lt 1 LANG1                         &lt 4 SEMI
             >;
 
             sensor-bindings = <&inc_dec_kp LG(MINUS) LG(EQUAL)>;
@@ -97,8 +97,8 @@
             bindings = <
 &none          &kp QMARK  &none     &none     &none                             &none      &kp PIPE  &kp MINUS  &kp LPAR  &kp RPAR
 &kp EXCL       &kp AT     &kp HASH  &kp DLLR  &kp PRCNT  &trans      &kp TILDE  &kp CARET  &kp AMPS  &kp STAR   &kp LBKT  &kp RBKT
-&kp BACKSLASH  &none      &none     &none     &kp COLON  &trans      &trans     &kp EQUAL  &kp LT    &kp GT     &kp LBRC  &kp RBRC
-&trans         &trans     &trans    &trans    &trans     &trans      &trans     &trans                                    &trans
+&kp BACKSLASH  &none      &none     &none     &none      &trans      &trans     &kp EQUAL  &kp LT    &kp GT     &kp LBRC  &kp RBRC
+&trans         &trans     &trans    &trans    &trans     &trans      &trans     &trans                                    &kp COLON
             >;
         };
 
