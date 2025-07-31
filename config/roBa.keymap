@@ -31,25 +31,20 @@
 
         right_opt {
             bindings = <&kp RALT>;
-            key-positions = <31 32>;
+            key-positions = <19 20>;
             layers = <0>;
         };
 
         right_ctrl {
             bindings = <&kp RCTRL>;
-            key-positions = <33 32>;
+            key-positions = <20 21>;
             layers = <0>;
         };
 
         right_gui {
             bindings = <&kp RGUI>;
-            key-positions = <30 31>;
+            key-positions = <18 19>;
             layers = <0>;
-        };
-
-        minus {
-            bindings = <&kp MINUS>;
-            key-positions = <7 8>;
         };
     };
 
@@ -78,10 +73,10 @@
 
         default_layer {
             bindings = <
-&kp ESC       &kp W     &kp U     &kp F            &kp Q                                             &kp Z        &kp M  &kp R  &kp G    &kp P
-&mt LSHIFT A  &lt 4 I   &kp E     &kp O            &kp MINUS    &kp LG(KP_N0)         &kp GRAVE      &kp D        &kp T  &kp N  &lt 5 S  &mt RIGHT_SHIFT Y
-&kp TAB       &kp X     &kp C     &kp V            &kp SEMI     &kp LANG2             &kp LANG1      &kp B        &kp H  &kp J  &kp K    &kp L
-&sk LCTRL     &sk LALT  &sk LCMD  &lt 3 LC(SPACE)  &lt 2 SPACE  &mt LSHIFT COMMA      &mt RSHFT DOT  &lt 1 ENTER                         &lt 4 SQT
+&kp ESC       &kp W     &kp U     &kp F        &kp Q                                               &kp Z        &kp M  &kp R  &kp G    &kp P
+&mt LSHIFT A  &lt 4 I   &kp E     &kp O        &kp SQT      &kp LG(KP_N0)         &kp GRAVE        &kp D        &kp T  &kp N  &lt 5 S  &mt RIGHT_SHIFT Y
+&kp TAB       &kp X     &kp C     &kp V        &kp SLASH    &kp COMMA             &kp DOT          &kp B        &kp H  &kp J  &kp K    &kp L
+&sk LCTRL     &sk LALT  &sk LCMD  &lt 3 MINUS  &lt 2 LANG2  &mt LSHIFT SPACE      &mt RSHFT ENTER  &lt 1 LANG1                         &lt 4 SEMI
             >;
 
             sensor-bindings = <&inc_dec_kp LG(MINUS) LG(EQUAL)>;
@@ -89,10 +84,10 @@
 
         NUM {
             bindings = <
-&kp LG(KP_N1)  &kp LG(KP_N2)  &kp LG(KP_N3)    &kp LG(KP_N4)  &kp LG(KP_N5)                             &kp PERCENT  &kp COMMA  &kp DOT    &kp BSPC   &kp DEL
-&kp KP_N1      &kp KP_N2      &kp KP_NUMBER_3  &kp KP_N4      &kp KP_N5      &kp K_MUTE      &kp TILDE  &kp KP_N6    &kp KP_N7  &kp KP_N8  &kp KP_N9  &kp KP_N0
-&kp SLASH      &kp STAR       &kp MINUS        &kp PLUS       &kp COLON      &trans          &trans     &kp EQUAL    &kp LEFT   &kp DOWN   &kp UP     &kp RIGHT
-&trans         &trans         &trans           &trans         &trans         &trans          &trans     &trans                                        &kp RIGHT_SHIFT
+&kp LG(KP_N1)     &kp LG(KP_N2)  &kp LG(KP_N3)    &kp LG(KP_N4)  &kp LG(KP_N5)                             &none      &kp COMMA  &kp DOT    &kp BSPC   &kp DEL
+&mt LSHIFT KP_N1  &kp KP_N2      &kp KP_NUMBER_3  &kp KP_N4      &kp KP_N5      &kp K_MUTE      &kp TILDE  &kp KP_N6  &kp KP_N7  &kp KP_N8  &kp KP_N9  &mt RSHFT KP_N0
+&kp SLASH         &kp STAR       &kp MINUS        &kp PLUS       &kp PERCENT    &trans          &trans     &kp EQUAL  &kp LEFT   &kp DOWN   &kp UP     &kp RIGHT
+&trans            &trans         &trans           &trans         &trans         &trans          &trans     &trans                                      &kp COLON
             >;
 
             sensor-bindings = <&inc_dec_kp C_VOL_DN C_VOL_UP>;
@@ -119,8 +114,8 @@
         MOUSE {
             bindings = <
 &trans  &trans  &trans  &trans  &trans                      &trans  &trans    &trans    &trans  &trans
-&trans  &trans  &trans  &trans  &trans  &trans      &trans  &trans  &mkp MB1  &mkp MB2  &trans  &trans
 &trans  &trans  &trans  &trans  &trans  &trans      &trans  &trans  &trans    &trans    &trans  &trans
+&trans  &trans  &trans  &trans  &trans  &trans      &trans  &trans  &mkp MB1  &mkp MB2  &trans  &trans
 &trans  &trans  &trans  &trans  &trans  &trans      &trans  &trans                              &trans
             >;
         };
@@ -148,7 +143,7 @@
         compatible = "zmk,conditional-layers";
 
         bluetooth {
-            if-layers = <1 2>;
+            if-layers = <1 2 3>;
             then-layer = <6>;
         };
     };
