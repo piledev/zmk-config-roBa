@@ -106,7 +106,7 @@
 &kp PERCENT       &none      &kp COMMA  &none      &none                                 &none      &none      &kp DOT    &kp BSPC   &kp DEL
 &mt LSHIFT KP_N1  &kp KP_N2  &kp KP_N3  &kp KP_N4  &kp KP_N5  &kp K_MUTE      &kp TILDE  &kp KP_N6  &kp KP_N7  &kp KP_N8  &kp KP_N9  &mt RSHFT KP_N0
 &kp SLASH         &kp STAR   &kp MINUS  &kp PLUS   &kp COLON  &trans          &trans     &kp EQUAL  &kp LEFT   &kp DOWN   &kp UP     &kp RIGHT
-&trans            &trans     &trans     &lt 3 DEL  &trans     &trans          &trans     &trans                                      &kp RIGHT
+&trans            &trans     &trans     &trans     &trans     &trans          &trans     &trans                                      &kp RIGHT
             >;
 
             sensor-bindings = <&inc_dec_kp C_VOL_DN C_VOL_UP>;
@@ -117,7 +117,7 @@
 &none          &kp QMARK  &kp COMMA  &none     &none                             &kp KP_MINUS  &kp PIPE  &kp DOT   &kp LPAR  &kp RPAR
 &kp EXCL       &kp AT     &kp HASH   &kp DLLR  &kp PRCNT  &trans      &kp TILDE  &kp CARET     &kp AMPS  &kp STAR  &kp LBKT  &kp RBKT
 &kp BACKSLASH  &none      &none      &none     &kp COLON  &trans      &trans     &kp EQUAL     &kp LT    &kp GT    &kp LBRC  &kp RBRC
-&trans         &trans     &trans     &trans    &trans     &trans      &trans     &trans                                      &kp COLON
+&trans         &trans     &trans     &trans    &trans     &trans      &kp DEL    &trans                                      &kp COLON
             >;
         };
 
