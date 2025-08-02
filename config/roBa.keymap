@@ -2,6 +2,7 @@
 #include <dt-bindings/zmk/bt.h>
 #include <dt-bindings/zmk/keys.h>
 #include <dt-bindings/zmk/pointing.h>
+#include <dt-bindings/zmk/mouse.h>
 
 &mt {
     flavor = "balanced";
@@ -102,10 +103,10 @@
 
         NUM {
             bindings = <
-&kp COLON         &none      &kp COMMA        &none      &none                                   &none      &none      &kp DOT    &kp BSPC   &kp DEL
-&mt LSHIFT KP_N1  &kp KP_N2  &kp KP_NUMBER_3  &kp KP_N4  &kp KP_N5    &kp K_MUTE      &kp TILDE  &kp KP_N6  &kp KP_N7  &kp KP_N8  &kp KP_N9  &mt RSHFT KP_N0
-&kp SLASH         &kp STAR   &kp MINUS        &kp PLUS   &kp PERCENT  &trans          &trans     &kp EQUAL  &kp LEFT   &kp DOWN   &kp UP     &kp RIGHT
-&trans            &trans     &trans           &trans     &trans       &trans          &trans     &trans                                      &kp RIGHT
+&kp COLON         &none      &kp COMMA  &none      &none                                   &none      &none      &kp DOT    &kp BSPC   &kp DEL
+&mt LSHIFT KP_N1  &kp KP_N2  &kp KP_N3  &kp KP_N4  &kp KP_N5    &kp K_MUTE      &kp TILDE  &kp KP_N6  &kp KP_N7  &kp KP_N8  &kp KP_N9  &mt RSHFT KP_N0
+&kp SLASH         &kp STAR   &kp MINUS  &kp PLUS   &kp PERCENT  &trans          &trans     &kp EQUAL  &kp LEFT   &kp DOWN   &kp UP     &kp RIGHT
+&trans            &trans     &trans     &trans     &trans       &trans          &trans     &trans                                      &kp RIGHT
             >;
 
             sensor-bindings = <&inc_dec_kp C_VOL_DN C_VOL_UP>;
@@ -131,10 +132,10 @@
 
         MOUSE {
             bindings = <
-&trans  &trans  &trans  &trans  &trans                      &trans  &trans    &trans    &trans  &trans
-&trans  &trans  &trans  &trans  &trans  &trans      &trans  &trans  &trans    &trans    &trans  &trans
-&trans  &trans  &trans  &trans  &trans  &trans      &trans  &trans  &mkp MB1  &mkp MB2  &trans  &trans
-&trans  &trans  &trans  &trans  &trans  &trans      &trans  &trans                              &trans
+&trans  &trans  &trans  &trans  &trans                      &trans    &trans    &trans    &trans    &trans
+&trans  &trans  &trans  &trans  &trans  &trans      &trans  &trans    &trans    &trans    &trans    &trans
+&trans  &trans  &trans  &trans  &trans  &trans      &trans  &mkp MB4  &mkp MB1  &mkp MB2  &mkp MB5  &trans
+&trans  &trans  &trans  &trans  &trans  &trans      &trans  &trans                                  &trans
             >;
         };
 
