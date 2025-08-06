@@ -105,8 +105,8 @@
         NUM {
             bindings = <
 &kp PERCENT       &none         &kp COMMA    &none      &none                                       &none      &none      &kp DOT    &kp BSPC   &kp DEL
-&mt LSHIFT KP_N1  &kp KP_N2     &kp KP_N3    &kp KP_N4  &kp KP_N5        &kp K_MUTE      &kp TILDE  &kp KP_N6  &kp KP_N7  &kp KP_N8  &kp KP_N9  &mt RSHFT KP_N0
-&kp COLON         &kp KP_MINUS  &kp KP_PLUS  &kp SLASH  &kp KP_MULTIPLY  &trans          &trans     &kp EQUAL  &kp LEFT   &kp DOWN   &kp UP     &kp RIGHT
+&kp KP_N1         &kp KP_N2     &kp KP_N3    &kp KP_N4  &kp KP_N5        &kp K_MUTE      &kp TILDE  &kp KP_N6  &kp KP_N7  &kp KP_N8  &kp KP_N9  &kp KP_N0
+&mt LSHIFT COLON  &kp KP_MINUS  &kp KP_PLUS  &kp SLASH  &kp KP_MULTIPLY  &trans          &trans     &kp EQUAL  &kp LEFT   &kp DOWN   &kp UP     &mt RSHFT RIGHT
 &trans            &trans        &trans       &trans     &trans           &trans          &trans     &trans                                      &kp DEL
             >;
 
