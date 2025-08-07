@@ -13,7 +13,6 @@
 
 &trackball {
     automouse-layer = <4>;
-
     scroll-layers = <5>;
 
     // arrows {
@@ -88,8 +87,7 @@
                 <&macro_release>,
                 <&mkp LCLK>,
                 <&macro_tap>,
-                <&tog_off 4 &sl 4>,
-                <&kp LANG2>;
+                <&tog_off 4 &sl 4>;
 
             label = "MACRO_LEFT_CLICK";
         };
@@ -118,10 +116,10 @@
 
         default_layer {
             bindings = <
-&kp ESC      &kp W     &kp U     &kp F        &kp Q                                             &kp Z      &kp M  &kp R  &kp G  &kp P
-&mt LSHFT A  &kp I     &kp E     &kp O        &kp MINUS    &kp LG(KP_N0)       &kp GRAVE        &kp D      &kp T  &kp N  &kp S  &mt RSHFT Y
-&kp SEMI     &kp X     &kp C     &kp V        &kp SQT      &kp LANG2           &kp LANG1        &kp B      &kp H  &kp J  &kp K  &kp L
-&sk LCTRL    &sk LALT  &sk LCMD  &lt 3 COMMA  &lt 2 SPACE  &mt LSHFT DOT       &mt RSHFT ENTER  &lt 1 TAB                       &kp BSPC
+&kp ESC      &kp W     &kp U     &kp F        &kp Q                                            &kp Z      &kp M  &kp R  &kp G  &kp P
+&mt LSHFT A  &kp I     &kp E     &kp O        &kp MINUS    &kp LG(KP_N0)      &kp GRAVE        &kp D      &kp T  &kp N  &kp S  &mt RSHFT Y
+&kp SEMI     &kp X     &kp C     &kp V        &kp SQT      &kp LANG2          &kp LANG1        &kp B      &kp H  &kp J  &kp K  &kp L
+&sk LCTRL    &sk LALT  &sk LCMD  &lt 3 COMMA  &lt 2 SPACE  &mt LSHFT DOT      &mt RSHFT ENTER  &lt 1 TAB                       &kp BSPC
             >;
 
             sensor-bindings = <&inc_dec_kp LG(MINUS) LG(EQUAL)>;
@@ -129,10 +127,10 @@
 
         NUM {
             bindings = <
-&kp PERCENT       &none         &kp COMMA    &none      &none                                       &none      &none      &kp DOT    &kp BSPC   &kp DEL
-&mt LSHFT KP_N1   &kp KP_N2     &kp KP_N3    &kp KP_N4  &kp KP_N5        &kp K_MUTE      &kp TILDE  &kp KP_N6  &kp KP_N7  &kp KP_N8  &kp KP_N9  &mt RSHFT KP_N0
-&kp COLON         &kp KP_MINUS  &kp KP_PLUS  &kp SLASH  &kp KP_MULTIPLY  &trans          &trans     &kp EQUAL  &kp LEFT   &kp DOWN   &kp UP     &kp RIGHT
-&trans            &trans        &trans       &trans     &trans           &trans          &trans     &trans                                      &kp DEL
+&kp PERCENT      &none         &kp COMMA    &none      &none                                       &none      &none      &kp DOT    &kp BSPC   &kp DEL
+&mt LSHFT KP_N1  &kp KP_N2     &kp KP_N3    &kp KP_N4  &kp KP_N5        &kp K_MUTE      &kp TILDE  &kp KP_N6  &kp KP_N7  &kp KP_N8  &kp KP_N9  &mt RSHFT KP_N0
+&kp COLON        &kp KP_MINUS  &kp KP_PLUS  &kp SLASH  &kp KP_MULTIPLY  &trans          &trans     &kp EQUAL  &kp LEFT   &kp DOWN   &kp UP     &kp RIGHT
+&trans           &trans        &trans       &trans     &trans           &trans          &trans     &trans                                      &kp DEL
             >;
 
             sensor-bindings = <&inc_dec_kp C_VOL_DN C_VOL_UP>;
