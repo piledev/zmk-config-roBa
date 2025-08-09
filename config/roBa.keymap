@@ -39,13 +39,13 @@
 
         ralt {
             bindings = <&kp RALT>;
-            key-positions = <19 20>;
+            key-positions = <19 18>;
             layers = <0 1 2>;
         };
 
         rctrl {
             bindings = <&kp LCTRL>;
-            key-positions = <31 32>;
+            key-positions = <19 20>;
             layers = <0 1 2>;
         };
 
@@ -57,13 +57,13 @@
 
         lalt {
             bindings = <&kp LALT>;
-            key-positions = <11 12>;
+            key-positions = <12 13>;
             layers = <0 1 2>;
         };
 
         lctrl {
             bindings = <&kp LCTRL>;
-            key-positions = <23 24>;
+            key-positions = <12 11>;
             layers = <0 1 2>;
         };
     };
@@ -93,10 +93,10 @@
 
         default_layer {
             bindings = <
-&kp ESC       &lt 4 W   &kp U     &kp F        &kp Q                                            &kp Z      &kp M  &kp R   &lt 4 G  &kp P
-&mt LSHFT A   &lt 5 I   &kp E     &kp O        &kp MINUS    &kp LG(KP_N0)      &kp DQT          &kp D      &kp T  &kp N   &lt 5 S  &mt RSHFT Y
-&kp SEMI      &kp X     &kp C     &kp V        &kp SLASH    &kp GRAVE          &kp SQT          &kp B      &kp H  &kp J   &kp K    &kp L
-&sk LCTRL     &sk LALT  &sk LCMD  &lt 3 COMMA  &lt 2 SPACE  &mt LSHFT DOT      &mt RSHFT ENTER  &lt 1 TAB                          &kp BSPC
+&kp ESC      &lt 4 W   &kp U     &kp F        &kp Q                                            &kp Z      &kp M  &kp R  &lt 4 G  &kp P
+&mt LSHFT A  &lt 5 I   &kp E     &kp O        &kp MINUS    &kp LG(KP_N0)      &kp DQT          &kp D      &kp T  &kp N  &lt 5 S  &mt RSHFT Y
+&kp SEMI     &kp X     &kp C     &kp V        &kp SLASH    &kp GRAVE          &kp SQT          &kp B      &kp H  &kp J  &kp K    &kp L
+&sk LCTRL    &sk LALT  &sk LCMD  &lt 3 COMMA  &lt 2 SPACE  &mt LSHFT DOT      &mt RSHFT ENTER  &lt 1 TAB                         &kp BSPC
             >;
 
             sensor-bindings = <&inc_dec_kp LG(MINUS) LG(EQUAL)>;
@@ -118,7 +118,7 @@
 &kp LANG2  &kp LANG1  &none      &none          &none                              &none      &kp PIPE  &kp KP_MINUS  &kp LPAR  &kp RPAR
 &kp EXCL   &kp AT     &kp HASH   &kp DLLR       &kp PRCNT  &trans         &trans   &kp CARET  &kp AMPS  &kp STAR      &kp LBKT  &kp RBKT
 &kp COLON  &none      &kp QMARK  &kp BACKSLASH  &trans     &kp TILDE      &kp DQT  &kp EQUAL  &kp LT    &kp GT        &kp LBRC  &kp RBRC
-&trans     &trans     &trans     &trans         &trans     &trans         &trans   &trans                                      &kp DEL
+&trans     &trans     &trans     &trans         &trans     &trans         &trans   &trans                                       &kp DEL
             >;
         };
 
