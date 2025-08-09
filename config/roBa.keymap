@@ -93,8 +93,8 @@
 
         default_layer {
             bindings = <
-&kp ESC         &kp W     &kp U     &kp F        &kp Q                                            &kp Z      &kp M  &lt 5 R   &kp G    &kp P
-&mt LSHFT A     &kp I     &kp E     &kp O        &kp MINUS    &kp LG(KP_N0)      &kp GRAVE        &kp D      &kp T  &lt 4 N   &kp S    &mt RSHFT Y
+&kp ESC         &kp W     &kp U     &kp F        &kp Q                                            &kp Z      &kp M  &kp R     &kp G    &lt 4 P
+&mt LSHFT A     &kp I     &kp E     &kp O        &kp MINUS    &kp LG(KP_N0)      &kp GRAVE        &kp D      &kp T  &lt 5 N   &kp S    &mt RSHFT Y
 &kp SEMI        &kp X     &kp C     &kp V        &kp SLASH    &kp DQT            &kp SQT          &kp B      &kp H  &kp J     &kp K    &kp L
 &sk LCTRL       &sk LALT  &sk LCMD  &lt 3 COMMA  &lt 2 SPACE  &mt LSHFT DOT      &mt RSHFT ENTER  &lt 1 TAB                            &kp BSPC
             >;
@@ -134,8 +134,8 @@
         MOUSE {
             bindings = <
 &trans  &trans  &trans  &trans  &trans                      &trans  &trans    &trans    &trans  &trans
-&trans  &trans  &trans  &trans  &trans  &trans      &trans  &trans  &mkp MB1  &trans  &mkp MB2  &trans
-&trans  &trans  &trans  &trans  &trans  &trans      &trans  &trans  &mkp MB4  &trans  &mkp MB5  &trans
+&trans  &trans  &trans  &trans  &trans  &trans      &trans  &trans  &mkp MB1  &mkp MB2  &trans  &trans
+&trans  &trans  &trans  &trans  &trans  &trans      &trans  &trans  &mkp MB4  &mkp MB5  &trans  &trans
 &trans  &trans  &trans  &trans  &trans  &trans      &trans  &trans                              &trans
             >;
         };
