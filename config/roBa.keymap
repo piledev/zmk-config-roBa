@@ -34,37 +34,37 @@
         rgui {
             bindings = <&kp RGUI>;
             key-positions = <18 20>;
-            layers = <0>;
+            layers = <0 1 2>;
         };
 
         ralt {
             bindings = <&kp RALT>;
             key-positions = <19 20>;
-            layers = <0>;
+            layers = <0 1 2>;
         };
 
         rctrl {
             bindings = <&kp LCTRL>;
             key-positions = <31 32>;
-            layers = <0>;
+            layers = <0 1 2>;
         };
 
         lgui {
             bindings = <&kp RGUI>;
             key-positions = <11 13>;
-            layers = <0>;
+            layers = <0 1 2>;
         };
 
         lalt {
             bindings = <&kp LALT>;
             key-positions = <11 12>;
-            layers = <0>;
+            layers = <0 1 2>;
         };
 
         lctrl {
             bindings = <&kp LCTRL>;
             key-positions = <23 24>;
-            layers = <0>;
+            layers = <0 1 2>;
         };
     };
 
@@ -95,8 +95,8 @@
             bindings = <
 &kp ESC         &kp W     &kp U     &kp F        &kp Q                                            &kp Z      &kp M  &kp R    &kp G    &kp P
 &mt LSHFT A     &kp I     &kp E     &kp O        &kp MINUS    &kp LG(KP_N0)      &kp GRAVE        &kp D      &kp T  &lt 4 N  &lt 5 S  &mt RSHFT Y
-&kp SEMI        &kp X     &kp C     &kp V        &kp SQT      &kp LANG2          &kp LANG1        &kp B      &kp H  &kp J    &kp K    &kp L
-&sk LCTRL       &sk LALT  &sk LCMD  &lt 3 COMMA  &lt 2 SPACE  &mt LSHFT DOT      &mt RSHFT ENTER  &lt 1 TAB                           &kp BSPC
+&kp SEMI        &kp X     &kp C     &kp V        &kp SQT      &kp KP_COMMA       &kp KP_DOT       &kp B      &kp H  &kp J    &kp K    &kp L
+&sk LCTRL       &sk LALT  &sk LCMD  &lt 3 LANG1  &lt 2 SPACE  &mt LSHFT LANG2    &mt RSHFT ENTER  &lt 1 TAB                           &kp BSPC
             >;
 
             sensor-bindings = <&inc_dec_kp LG(MINUS) LG(EQUAL)>;
