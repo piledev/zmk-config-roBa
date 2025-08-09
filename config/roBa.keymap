@@ -93,10 +93,10 @@
 
         default_layer {
             bindings = <
-&kp ESC         &kp W     &kp U     &kp F        &kp Q                                            &kp Z      &kp M  &kp R     &kp G    &lt 4 P
-&mt LSHFT A     &kp I     &kp E     &kp O        &kp MINUS    &kp LG(KP_N0)      &kp DQT          &kp D      &kp T  &lt 5 N   &kp S    &mt RSHFT Y
-&kp SEMI        &kp X     &kp C     &kp V        &kp SLASH    &kp GRAVE          &kp SQT          &kp B      &kp H  &kp J     &kp K    &kp L
-&sk LCTRL       &sk LALT  &sk LCMD  &lt 3 COMMA  &lt 2 SPACE  &mt LSHFT DOT      &mt RSHFT ENTER  &lt 1 TAB                            &kp BSPC
+&kp ESC       &lt 4 W   &kp U     &kp F        &kp Q                                            &kp Z      &kp M  &kp R   &lt 4 G  &kp P
+&mt LSHFT A   &lt 5 I   &kp E     &kp O        &kp MINUS    &kp LG(KP_N0)      &kp DQT          &kp D      &kp T  &kp N   &lt 5 S  &mt RSHFT Y
+&kp SEMI      &kp X     &kp C     &kp V        &kp SLASH    &kp GRAVE          &kp SQT          &kp B      &kp H  &kp J   &kp K    &kp L
+&sk LCTRL     &sk LALT  &sk LCMD  &lt 3 COMMA  &lt 2 SPACE  &mt LSHFT DOT      &mt RSHFT ENTER  &lt 1 TAB                          &kp BSPC
             >;
 
             sensor-bindings = <&inc_dec_kp LG(MINUS) LG(EQUAL)>;
@@ -133,9 +133,9 @@
 
         MOUSE {
             bindings = <
-&trans  &trans  &trans  &trans  &trans                      &trans  &trans    &trans    &trans  &trans
+&trans  &trans  &trans  &trans  &trans                      &trans  &trans    &mkp MB5  &trans  &trans
 &trans  &trans  &trans  &trans  &trans  &trans      &trans  &trans  &mkp MB1  &mkp MB2  &trans  &trans
-&trans  &trans  &trans  &trans  &trans  &trans      &trans  &trans  &mkp MB4  &mkp MB5  &trans  &trans
+&trans  &trans  &trans  &trans  &trans  &trans      &trans  &trans  &mkp MB4  &trans    &trans  &trans
 &trans  &trans  &trans  &trans  &trans  &trans      &trans  &trans                              &trans
             >;
         };
