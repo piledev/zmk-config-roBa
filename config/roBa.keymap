@@ -115,7 +115,7 @@
 
         SIGN {
             bindings = <
-&kp LANG1  &kp LANG2  &none      &none          &none                             &none      &kp PIPE  &kp KP_MINUS  &kp LPAR  &kp RPAR
+&kp LANG2  &kp LANG1  &none      &none          &none                             &none      &kp PIPE  &kp KP_MINUS  &kp LPAR  &kp RPAR
 &kp EXCL   &kp AT     &kp HASH   &kp DLLR       &kp PRCNT  &trans      &kp TILDE  &kp CARET  &kp AMPS  &kp STAR      &kp LBKT  &kp RBKT
 &kp COLON  &none      &kp QMARK  &kp BACKSLASH  &trans     &trans      &trans     &kp EQUAL  &kp LT    &kp GT        &kp LBRC  &kp RBRC
 &trans     &trans     &trans     &trans         &trans     &trans      &trans     &trans                                      &kp DEL
