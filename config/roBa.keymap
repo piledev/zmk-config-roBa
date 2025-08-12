@@ -39,7 +39,7 @@
 
         ralt {
             bindings = <&kp RALT>;
-            key-positions = <19 18>;
+            key-positions = <31 32>;
             layers = <0 1 2>;
         };
 
@@ -57,7 +57,7 @@
 
         lalt {
             bindings = <&kp LALT>;
-            key-positions = <12 13>;
+            key-positions = <23 24>;
             layers = <0 1 2>;
         };
 
@@ -93,10 +93,10 @@
 
         default_layer {
             bindings = <
-&kp ESC         &lt 4 W   &lt 5 U   &kp F        &kp Q                                              &kp Z      &kp M  &lt 5 R  &lt 4 G  &kp P
-&mt LSHFT A     &kp I     &kp E     &kp O        &kp COMMA    &kp LG(KP_N0)        &kp DQT          &kp D      &kp T  &kp N    &kp S    &mt RSHFT Y
-&kp SLASH       &kp X     &kp C     &kp V        &kp DOT      &kp GRAVE            &kp SQT          &kp B      &kp H  &kp J    &kp K    &kp L
-&sk LCTRL       &sk LALT  &sk LCMD  &lt 3 TAB    &lt 2 SEMI   &mt LSHFT SPACE      &mt RSHFT ENTER  &lt 1 MINUS                         &kp BSPC
+&kp ESC      &lt 4 W   &lt 5 U   &kp F      &kp Q                                             &kp Z        &kp M  &lt 5 R  &lt 4 G  &kp P
+&mt LSHFT A  &kp I     &kp E     &kp O      &kp COMMA   &kp LG(KP_N0)        &kp DQT          &kp D        &kp T  &kp N    &kp S    &mt RSHFT Y
+&kp SLASH    &kp X     &kp C     &kp V      &kp DOT     &kp GRAVE            &kp SQT          &kp B        &kp H  &kp J    &kp K    &kp L
+&sk LCTRL    &sk LALT  &sk LCMD  &lt 3 TAB  &lt 2 SEMI  &mt LSHFT SPACE      &mt RSHFT ENTER  &lt 1 MINUS                           &kp BSPC
             >;
 
             sensor-bindings = <&inc_dec_kp LG(MINUS) LG(EQUAL)>;
@@ -104,10 +104,10 @@
 
         NUM {
             bindings = <
-&kp LANG2        &kp LANG1        &kp COMMA     &kp DOT       &kp PERCENT                           &none      &none      &none      &kp BSPC   &kp DEL
-&mt LSHFT KP_N1  &kp KP_N2        &kp KP_N3     &kp KP_N4     &kp KP_N5    &kp K_MUTE      &trans   &kp KP_N6  &kp KP_N7  &kp KP_N8  &kp KP_N9  &mt RSHFT KP_N0
-&kp KP_SLASH     &kp KP_MULTIPLY  &kp KP_MINUS  &kp KP_PLUS   &kp COLON    &kp TILDE       &kp DQT  &kp EQUAL  &kp LEFT   &kp DOWN   &kp UP     &kp RIGHT
-&trans           &trans           &trans        &trans        &trans       &trans          &trans   &trans                                      &kp DEL
+&kp LANG2        &kp LANG1        &kp COMMA     &kp DOT      &kp PERCENT                           &none      &none      &none      &kp BSPC   &kp DEL
+&mt LSHFT KP_N1  &kp KP_N2        &kp KP_N3     &kp KP_N4    &kp KP_N5    &kp K_MUTE      &trans   &kp KP_N6  &kp KP_N7  &kp KP_N8  &kp KP_N9  &mt RSHFT KP_N0
+&kp KP_SLASH     &kp KP_MULTIPLY  &kp KP_MINUS  &kp KP_PLUS  &kp COLON    &kp TILDE       &kp DQT  &kp EQUAL  &kp LEFT   &kp DOWN   &kp UP     &kp RIGHT
+&trans           &trans           &trans        &trans       &trans       &trans          &trans   &trans                                      &kp DEL
             >;
 
             sensor-bindings = <&inc_dec_kp C_VOL_DN C_VOL_UP>;
@@ -124,10 +124,10 @@
 
         FUNCTION {
             bindings = <
-&kp F1           &kp F2           &kp F3         &kp F4       &kp F5                      &kp F6         &kp F7         &kp F8         &kp F9  &kp F10
-&kp LS(LG(F12))  &kp LA(LS(F12))  &kp LS(LA(H))  &kp LG(F12)  &trans  &trans      &trans  &kp RG(KP_N0)  &kp RG(MINUS)  &kp RG(EQUAL)  &trans  &kp F11
-&trans           &trans           &trans         &trans       &trans  &kp CAPS    &trans  &kp K_MUTE     &kp C_VOL_DN   &kp C_VOL_UP   &trans  &kp F12
-&trans           &trans           &trans         &trans       &trans  &trans      &trans  &trans                                               &kp F13
+&kp F1           &kp F2           &kp F3         &kp F4       &kp F5                        &kp F6         &kp F7         &kp F8         &kp F9  &kp F10
+&kp LS(LG(F12))  &kp LA(LS(F12))  &kp LS(LA(H))  &kp LG(F12)  &trans  &trans        &trans  &kp RG(KP_N0)  &kp RG(MINUS)  &kp RG(EQUAL)  &trans  &kp F11
+&trans           &trans           &trans         &trans       &trans  &kp CAPS      &trans  &kp K_MUTE     &kp C_VOL_DN   &kp C_VOL_UP   &trans  &kp F12
+&trans           &trans           &trans         &trans       &trans  &trans        &trans  &trans                                               &kp F13
             >;
         };
 
