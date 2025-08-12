@@ -33,7 +33,7 @@
 
         rgui {
             bindings = <&kp RGUI>;
-            key-positions = <18 20>;
+            key-positions = <7 8>;
             layers = <0 1 2>;
         };
 
@@ -51,7 +51,7 @@
 
         lgui {
             bindings = <&kp RGUI>;
-            key-positions = <11 13>;
+            key-positions = <1 2>;
             layers = <0 1 2>;
         };
 
