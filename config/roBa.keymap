@@ -75,10 +75,10 @@
 
         default_layer {
             bindings = <
-&kp ESC          &kp W         &kp U           &kp F        &kp Q                                               &kp Z        &kp M  &lt 5 R  &lt 4 G  &kp P
-&mt LSHFT A      &kp I         &kp E           &kp O        &kp SQT      &kp LG(KP_N0)        &msc MOVE_Y(10)   &kp D        &kp T  &kp N    &kp S    &mt RSHFT Y
-&lt 5 SEMI       &kp X         &kp C           &lt 4 V      &kp GRAVE    &kp COLON            &msc MOVE_Y(-10)  &kp B        &kp H  &kp J    &kp K    &kp L
-&mt LCTRL COMMA  &mt LALT DOT  &mt LCMD LANG2  &lt 3 LANG1  &lt 2 SPACE  &mt LSHFT MINUS      &kp BSPC          &lt 1 ENTER                           &kp TAB
+&kp ESC          &kp W         &kp U           &kp F        &kp Q                                       &kp Z        &kp M  &lt 5 R  &lt 4 G  &kp P
+&mt LSHFT A      &kp I         &kp E           &kp O        &kp SQT      &kp LG(KP_N0)        &mkp MB4  &kp D        &kp T  &kp N    &kp S    &mt RSHFT Y
+&kp SEMI         &kp X         &kp C           &lt 4 V      &lt 5 GRAVE  &kp COLON            &mkp MB5  &kp B        &kp H  &kp J    &kp K    &kp L
+&mt LCTRL COMMA  &mt LALT DOT  &mt LCMD LANG2  &lt 3 LANG1  &lt 2 SPACE  &mt LSHFT MINUS      &kp BSPC  &lt 1 ENTER                           &kp TAB
             >;
 
             sensor-bindings = <&inc_dec_kp LG(MINUS) LG(EQUAL)>;
@@ -86,7 +86,7 @@
 
         NUM {
             bindings = <
-&none            &kp COMMA        &kp KP_DOT    &none        &none                                &none      &none      &none      &kp BSPC   &kp DEL
+&none            &kp COMMA        &kp DOT       &none        &none                                &none      &none      &none      &kp BSPC   &kp DEL
 &mt LSHFT KP_N1  &kp KP_N2        &kp KP_N3     &kp KP_N4    &kp KP_N5    &kp K_MUTE      &trans  &kp KP_N6  &kp KP_N7  &kp KP_N8  &kp KP_N9  &mt RSHFT KP_N0
 &kp SLASH        &kp KP_MULTIPLY  &kp KP_MINUS  &kp KP_PLUS  &kp PERCENT  &trans          &trans  &kp EQUAL  &kp LEFT   &kp DOWN   &kp UP     &kp RIGHT
 &trans           &trans           &trans        &trans       &trans       &trans          &trans  &trans                                      &trans
@@ -97,7 +97,7 @@
 
         SIGN {
             bindings = <
-&none          &kp COMMA  &kp KP_DOT  &kp QMARK  &none                           &none      &kp PIPE  &kp KP_MINUS  &kp LPAR  &kp RPAR
+&none          &kp COMMA  &kp DOT     &kp QMARK  &none                           &none      &kp PIPE  &kp KP_MINUS  &kp LPAR  &kp RPAR
 &kp EXCL       &kp AT     &kp HASH    &kp DLLR   &kp PRCNT  &trans      &trans   &kp CARET  &kp AMPS  &kp STAR      &kp LBKT  &kp RBKT
 &kp BACKSLASH  &none      &none       &none      &none      &trans      &trans   &kp EQUAL  &kp LT    &kp GT        &kp LBRC  &kp RBRC
 &trans         &trans     &trans      &trans     &trans     &trans      &kp DEL  &trans                                       &trans
