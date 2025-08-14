@@ -77,7 +77,7 @@
             bindings = <
 &kp ESC      &kp W            &kp U         &kp F         &kp Q                                            &kp Z        &kp M  &lt 5 R  &lt 4 G  &kp P
 &mt LSHFT A  &kp I            &kp E         &kp O         &kp SQT      &kp LG(KP_N0)        &kp PAGE_UP    &kp D        &kp T  &kp N    &kp S    &mt RSHFT Y
-&kp SEMI     &kp X            &lt 5 C       &lt 4 V       &kp GRAVE    &lt 3 COLON          &kp PAGE_DOWN  &kp B        &kp H  &kp J    &kp K    &kp L
+&kp    SEMI     &kp X            &lt 5 C       &lt 4 V       &kp GRAVE    &lt 3 COLON          &kp PAGE_DOWN  &kp B        &kp H  &kp J    &kp K    &kp L
 &none        &mt LCTRL COMMA  &mt LALT DOT  &mt LGUI TAB  &lt 2 SPACE  &mt LSHFT MINUS      &kp BSPC       &lt 1 ENTER                           &kp TAB
             >;
 
