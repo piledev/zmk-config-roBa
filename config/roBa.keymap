@@ -31,7 +31,19 @@
 };
 
 / {
-    combos { compatible = "zmk,combos"; };
+    combos {
+        compatible = "zmk,combos";
+
+        r_snipe {
+            bindings = <&mo 7>;
+            key-positions = <7 8>;
+        };
+
+        l_snipe {
+            bindings = <&mo 7>;
+            key-positions = <25 24>;
+        };
+    };
 
     macros {
         to_layer_0: to_layer_0 {
@@ -117,7 +129,7 @@
 &trans  &trans  &trans  &trans  &trans                      &trans  &mkp MB4  &mkp MB5  &trans  &trans
 &trans  &trans  &trans  &trans  &trans  &trans      &trans  &trans  &mkp MB1  &mkp MB2  &trans  &trans
 &trans  &trans  &trans  &trans  &trans  &trans      &trans  &trans  &trans    &trans    &trans  &trans
-&trans  &trans  &trans  &trans  &mo 7   &trans      &trans  &trans                              &trans
+&trans  &trans  &trans  &trans  &trans  &trans      &trans  &trans                              &trans
             >;
         };
 
