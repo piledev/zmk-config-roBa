@@ -10,7 +10,7 @@
     tapping-term-ms = <250>;
 };
 
-&lt { tapping-term-ms = <120>; };
+&lt { tapping-term-ms = <130>; };
 
 &trackball {
     // automouse-layer = <5>;
