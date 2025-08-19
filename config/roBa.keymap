@@ -71,13 +71,13 @@
             bindings = <&kp LANG2>, <&kp LANG1>;
         };
 
-        mtdl: mod_tap_dance_lang {
-            compatible = "zmk,behavior-hold-tap";
-            label = "MOD_TAP_DANCE_LANG";
-            #binding-cells = <1>;
-            tapping-term-ms = <250>;
-            bindings = <&mo>, <&tdl>;
-        };
+        // mtdl: mod_tap_dance_lang {
+        //     compatible = "zmk,behavior-hold-tap";
+        //     label = "MOD_TAP_DANCE_LANG";
+        //     #binding-cells = <2>;
+        //     tapping-term-ms = <250>;
+        //     bindings = <&mo>, <&tdl>;
+        // };
     };
 
     keymap {
@@ -88,7 +88,7 @@
 &kp ESC      &lt 5 W          &lt 7 U       &kp F         &kp Q                                            &kp Z        &kp M       &lt 7 R     &lt 5 G      &kp P
 &mt LSHFT A  &mt LCTRL I      &mt LALT E    &mt LGUI O    &kp SQT      &kp LG(KP_N0)          &kp PAGE_UP    &kp D        &mt RGUI T  &mt RALT N  &mt RCTRL S  &mt RSHFT Y
 &kp SEMI     &kp X            &kp C         &kp V         &kp GRAVE    &lt 3 COLON            &kp PAGE_DOWN  &kp B        &kp H       &kp J       &kp K        &kp L
-&none        &mt LCTRL COMMA  &mt LALT DOT  &mtdl LGUI    &lt 2 SPACE  &mt LSHFT MINUS        &kp BSPC       &lt 1 ENTER                                       &kp TAB
+&none        &mt LCTRL COMMA  &mt LALT DOT  &mt LGUI TAB  &lt 2 SPACE  &mt LSHFT MINUS        &kp BSPC       &lt 1 ENTER                                       &kp TAB
             >;
 
             sensor-bindings = <&inc_dec_kp LG(MINUS) LG(EQUAL)>;
