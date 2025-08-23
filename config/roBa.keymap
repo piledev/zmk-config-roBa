@@ -85,10 +85,10 @@
 
         default_layer {
             bindings = <
-&kp ESC      &lt 5 W          &lt 7 U       &kp F         &kp Q                                            &kp Z        &kp M       &lt 7 R     &lt 5 G      &kp P
-&mt LSHFT A  &mt LCTRL I      &mt LALT E    &mt LGUI O    &kp SQT      &kp LG(KP_N0)          &kp PAGE_UP    &kp D        &mt RGUI T  &mt RALT N  &mt RCTRL S  &mt RSHFT Y
-&kp SEMI     &kp X            &kp C         &kp V         &kp GRAVE    &lt 3 COLON            &kp PAGE_DOWN  &kp B        &kp H       &kp J       &kp K        &kp L
-&none        &mt LCTRL COMMA  &mt LALT DOT  &mt LGUI TAB  &lt 2 SPACE  &mt LSHFT MINUS        &kp BSPC       &lt 1 ENTER                                       &kp TAB
+&kp ESC      &lt 5 W          &lt 7 U       &kp F         &kp Q                                           &kp Z        &kp M       &lt 7 R     &lt 5 G      &kp P
+&mt LSHFT A  &mt LCTRL I      &mt LALT E    &mt LGUI O    &kp SQT      &kp LG(KP_N0)       &kp PAGE_UP    &kp D        &mt RGUI T  &mt RALT N  &mt RCTRL S  &mt RSHFT Y
+&kp SEMI     &kp X            &kp C         &kp V         &kp GRAVE    &lt 3 CAPS          &kp PAGE_DOWN  &kp B        &kp H       &kp J       &kp K        &kp L
+&none        &none            &none         &mt LGUI TAB  &lt 2 SPACE  &mt LSHFT MINUS     &kp BSPC       &lt 1 ENTER                                       &kp TAB
             >;
 
             sensor-bindings = <&inc_dec_kp LG(MINUS) LG(EQUAL)>;
@@ -96,10 +96,10 @@
 
         NUM {
             bindings = <
-&kp N1           &kp N2           &kp N3          &kp N4          &kp N5                               &kp N6     &kp N7          &kp N8          &kp N9           &kp N0
-&mt LSHFT KP_N1  &mt LCTRL KP_N2  &mt LALT KP_N3  &mt LGUI KP_N4  &kp KP_N5    &kp K_MUTE      &trans  &kp KP_N6  &mt RGUI KP_N7  &mt RALT KP_N8  &mt RCTRL KP_N9  &mt RSHFT KP_N0
-&kp SLASH        &kp KP_MULTIPLY  &kp KP_MINUS    &kp KP_PLUS     &kp PERCENT  &trans          &trans  &kp EQUAL  &kp LEFT        &kp DOWN        &kp UP           &kp RIGHT
-&trans           &trans           &trans          &trans          &trans       &trans          &trans  &trans                                                      &trans
+&kp SLASH     &kp KP_MULTIPLY  &kp KP_MINUS  &kp KP_PLUS  &kp PRCNT                           &none      &none        &none        &none         &kp BACKSLASH
+&mt LSHFT N1  &mt LCTRL N2     &mt LALT N3   &mt LGUI N4  &kp N5     &kp K_MUTE      &none    &kp N6     &mt RGUI N7  &mt RALT N8  &mt RCTRL N9  &mt RSHFT N0
+&tdl          &kp COMMA        &kp DOT       &kp COLON    &none      &none           &none    &kp EQUAL  &kp LEFT     &kp DOWN     &kp UP        &kp RIGHT
+&trans        &trans           &trans        &trans       &trans     &trans          &kp DEL  &trans                                             &trans
             >;
 
             sensor-bindings = <&inc_dec_kp C_VOL_DN C_VOL_UP>;
@@ -107,18 +107,18 @@
 
         SIGN {
             bindings = <
-&none          &kp QMARK     &none          &none          &none                           &none      &kp PIPE       &kp KP_MINUS   &kp LPAR        &kp RPAR
-&kp EXCL       &mt LCTRL AT  &mt LALT HASH  &mt LGUI DLLR  &kp PRCNT  &trans      &trans   &kp CARET  &mt RGUI AMPS  &mt RALT STAR  &mt RCTRL LBKT  &kp RBKT
-&kp BACKSLASH  &kp COMMA     &kp DOT        &tdl           &tdl       &kp CAPS    &trans   &kp EQUAL  &kp LT         &kp GT         &kp LBRC        &kp RBRC
-&trans         &trans        &trans         &trans         &trans     &trans      &kp DEL  &trans                                                   &trans
+&kp BACKSLASH  &kp QMARK     &none          &none          &none                          &none      &kp PIPE       &kp KP_MINUS   &kp LPAR        &kp RPAR
+&kp EXCL       &mt LCTRL AT  &mt LALT HASH  &mt LGUI DLLR  &kp PRCNT  &none      &none    &kp CARET  &mt RGUI AMPS  &mt RALT STAR  &mt RCTRL LBKT  &kp RBKT
+&tdl           &kp COMMA     &kp DOT        &kp COLON      &none      &none      &none    &kp EQUAL  &kp LT         &kp GT         &kp LBRC        &kp RBRC
+&trans         &trans        &trans         &trans         &trans     &trans     &kp DEL  &trans                                                   &trans
             >;
         };
 
         FUNCTION {
             bindings = <
 &kp F1           &kp F2           &kp F3         &kp F4       &kp F5                      &kp F6         &kp F7         &kp F8         &kp F9  &kp F10
-&kp LS(LG(F12))  &kp LA(LS(F12))  &kp LS(LA(H))  &kp LG(F12)  &trans  &trans      &trans  &kp RG(KP_N0)  &kp RG(MINUS)  &kp RG(EQUAL)  &trans  &kp F11
-&trans           &trans           &trans         &trans       &trans  &trans      &trans  &kp K_MUTE     &kp C_VOL_DN   &kp C_VOL_UP   &trans  &kp F12
+&kp LS(LG(F12))  &kp LS(LA(F12))  &kp LS(LA(H))  &kp LG(F12)  &none   &none       &none   &kp RG(KP_N0)  &kp RG(MINUS)  &kp RG(EQUAL)  &none   &kp F11
+&none            &none            &none          &none        &none   &none       &none   &kp K_MUTE     &kp C_VOL_DN   &kp C_VOL_UP   &none   &kp F12
 &trans           &trans           &trans         &trans       &trans  &trans      &trans  &trans                                               &kp F13
             >;
         };
@@ -134,7 +134,7 @@
 
         MOUSE {
             bindings = <
-&trans  &trans  &mo 6   &trans  &trans                      &trans  &mkp MB4  &mt 6 MB5  &trans  &trans
+&trans  &trans  &mo 6   &trans  &trans                      &trans  &mkp MB4  &lt 6 MB5  &trans  &trans
 &trans  &trans  &trans  &trans  &trans  &trans      &trans  &trans  &mkp MB1  &mkp MB2   &trans  &trans
 &trans  &trans  &trans  &trans  &trans  &trans      &trans  &trans  &trans    &trans     &trans  &trans
 &trans  &trans  &trans  &trans  &trans  &trans      &trans  &trans                               &trans
@@ -143,7 +143,7 @@
 
         SNIPE {
             bindings = <
-&trans  &trans  &mo 6   &trans  &trans                      &trans  &mkp MB4  &mt 6 MB5  &trans  &trans
+&trans  &trans  &mo 6   &trans  &trans                      &trans  &mkp MB4  &lt 6 MB5  &trans  &trans
 &trans  &trans  &trans  &trans  &trans  &trans      &trans  &trans  &mkp MB1  &mkp MB2   &trans  &trans
 &trans  &trans  &trans  &trans  &trans  &trans      &trans  &trans  &trans    &trans     &trans  &trans
 &trans  &trans  &trans  &trans  &trans  &trans      &trans  &trans                              &trans
