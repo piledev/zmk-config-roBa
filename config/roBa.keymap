@@ -123,9 +123,9 @@
 
         FUNCTION {
             bindings = <
-&kp F1                 &kp F2                 &kp F3                      &kp F4            &kp F5                      &kp F6         &kp F7         &kp F8         &kp F9  &kp F10
-&mt LSHFT LG(LS(F12))  &mt LCTRL LS(LA(F12))  &mt LS(LA(LALT)) LS(LA(H))  &mt LGUI LG(F12)  &none   &none       &none   &kp RG(KP_N0)  &kp RG(MINUS)  &kp RG(EQUAL)  &none   &kp F11
-&none                  &none                  &none                       &none             &none   &none       &none   &kp K_MUTE     &kp C_VOL_DN   &kp C_VOL_UP   &none   &kp F12
+&kp F1                 &kp F2                 &kp F3                      &kp F4            &kp F5                      &kp F6  &kp F7         &kp F8         &kp F9         &kp F10
+&mt LSHFT LG(LS(F12))  &mt LCTRL LS(LA(F12))  &mt LS(LA(LALT)) LS(LA(H))  &mt LGUI LG(F12)  &none   &none       &none   &none   &kp RG(KP_N0)  &kp RG(MINUS)  &kp RG(EQUAL)  &kp F11
+&none                  &none                  &none                       &none             &none   &none       &none   &none   &kp K_MUTE     &kp C_VOL_DN   &kp C_VOL_UP   &kp F12
 &trans                 &trans                 &trans                      &trans            &trans  &trans      &trans  &trans                                               &trans
             >;
         };
