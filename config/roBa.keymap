@@ -10,7 +10,7 @@
     tapping-term-ms = <250>;
 };
 
-&lt { tapping-term-ms = <140>; };
+&lt { tapping-term-ms = <150>; };
 
 &trackball {
     // automouse-layer = <5>;
@@ -71,6 +71,13 @@
             bindings = <&kp LANG2>, <&kp LANG1>;
         };
 
+        my_gresc: my_grave_escape {
+            compatible = "zmk,behavior-mod-morph";
+            #binding-cells = <0>;
+            bindings = <&kp ESC>, <&kp GRAVE>;
+            mods = <(MOD_LGUI|MOD_RGUI)>;
+        };
+
         // mtdl: mod_tap_dance_lang {
         //     compatible = "zmk,behavior-hold-tap";
         //     label = "MOD_TAP_DANCE_LANG";
@@ -85,9 +92,9 @@
 
         default_layer {
             bindings = <
-&kp ESC      &lt 5 W      &lt 7 U     &kp F       &kp Q                                            &kp Z        &kp M       &lt 7 R     &lt 5 G      &kp P
+&my_gresc    &lt 5 W      &lt 7 U     &kp F       &kp Q                                            &kp Z        &kp M       &lt 7 R     &lt 5 G      &kp P
 &mt LSHFT A  &mt LCTRL I  &mt LALT E  &mt LGUI O  &kp SQT      &kp LG(KP_N0)        &kp PAGE_UP    &kp D        &mt RGUI T  &mt RALT N  &mt RCTRL S  &mt RSHFT Y
-&kp TAB      &kp X        &kp C       &kp V       &kp GRAVE    &lt 3 CAPS           &kp PAGE_DOWN  &kp B        &kp H       &kp J       &kp K        &kp L
+&kp TAB      &kp X        &kp C       &kp V       &kp GRAVE    &mo 3                &kp PAGE_DOWN  &kp B        &kp H       &kp J       &kp K        &kp L
 &none        &none        &none       &tdl        &lt 2 SPACE  &mt LSHFT MINUS      &kp BSPC       &lt 1 ENTER                                       &none
             >;
 
@@ -99,7 +106,7 @@
 &kp SLASH     &kp KP_MULTIPLY  &kp KP_MINUS  &kp KP_PLUS  &kp PRCNT                           &none   &none        &kp EQUAL    &kp LT        &kp GT
 &mt LSHFT N1  &mt LCTRL N2     &mt LALT N3   &mt LGUI N4  &kp N5     &kp K_MUTE      &none    &kp N6  &mt RGUI N7  &mt RALT N8  &mt RCTRL N9  &mt RSHFT N0
 &tdl          &kp COMMA        &kp DOT       &kp COLON    &kp SEMI   &none           &none    &none   &kp LEFT     &kp DOWN     &kp UP        &kp RIGHT
-&trans        &trans           &trans        &trans       &trans     &trans          &kp DEL  &trans                                          &trans
+&trans        &trans           &trans        &kp CAPS     &trans     &trans          &kp DEL  &trans                                          &trans
             >;
 
             sensor-bindings = <&inc_dec_kp C_VOL_DN C_VOL_UP>;
