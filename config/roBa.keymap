@@ -93,10 +93,10 @@
 
         default_layer {
             bindings = <
-&my_gresc    &lt 5 W      &lt 7 U     &kp F        &kp Q                                            &kp Z        &kp M       &lt 7 R     &lt 5 G      &kp P
-&mt LSHFT A  &mt LCTRL I  &mt LALT E  &mt LGUI O   &kp MINUS    &kp LG(KP_N0)        &kp PAGE_UP    &kp D        &mt RGUI T  &mt RALT N  &mt RCTRL S  &mt RSHFT Y
-&kp TAB      &kp X        &kp C       &kp V        &kp SQT      &kp CAPS             &kp PAGE_DOWN  &kp B        &kp H       &kp J       &kp K        &kp L
-&none        &none        &none       &lt 3 LANG1  &lt 2 SPACE  &mt LSHFT LANG2      &kp BSPC       &lt 1 ENTER                                       &none
+&my_gresc    &lt 5 W      &lt 7 U     &kp F            &kp Q                                             &kp Z        &kp M       &lt 7 R     &lt 5 G      &kp P
+&mt LSHFT A  &mt LCTRL I  &mt LALT E  &mt LGUI O       &kp MINUS     &kp LG(KP_N0)        &kp PAGE_UP    &kp D        &mt RGUI T  &mt RALT N  &mt RCTRL S  &mt RSHFT Y
+&kp TAB      &kp X        &kp C       &kp V            &kp SQT       &kp CAPS             &kp PAGE_DOWN  &kp B        &kp H       &kp J       &kp K        &kp L
+&none        &none        &none       &mt LSHFT SPACE  &lt 2 LANG2   &lt 3 LANG1          &kp BSPC       &lt 1 ENTER                                       &none
             >;
 
             sensor-bindings = <&inc_dec_kp LG(MINUS) LG(EQUAL)>;
