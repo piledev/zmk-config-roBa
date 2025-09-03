@@ -78,14 +78,6 @@
 
             mods = <(MOD_LALT|MOD_RALT)>;
         };
-
-        // mtdl: mod_tap_dance_lang {
-        //     compatible = "zmk,behavior-hold-tap";
-        //     label = "MOD_TAP_DANCE_LANG";
-        //     #binding-cells = <2>;
-        //     tapping-term-ms = <250>;
-        //     bindings = <&mo>, <&tdl>;
-        // };
     };
 
     keymap {
@@ -93,10 +85,10 @@
 
         default_layer {
             bindings = <
-&kp ESC      &lt 5 W      &lt 7 U     &kp F            &kp Q                                          &kp Z        &kp M       &lt 7 R     &lt 5 G      &kp P
-&mt LSHFT A  &mt LCTRL I  &mt LALT E  &mt LGUI O       &kp SQT      &kp LG(KP_N0)      &kp PAGE_UP    &kp D        &mt RGUI T  &mt RALT N  &mt RCTRL S  &mt RSHFT Y
-&kp TAB      &kp X        &kp C       &kp V            &kp GRAVE    &kp MINUS          &kp PAGE_DOWN  &kp B        &kp H       &kp J       &kp K        &kp L
-&none        &none        &none       &lt 3 LANG1      &lt 2 SPACE  &mt LSHFT LANG2    &kp BSPC       &lt 1 ENTER                                       &none
+&kp ESC      &lt 5 W      &lt 7 U     &kp F            &kp Q                                      &kp Z        &kp M       &lt 7 R     &lt 5 G      &kp P
+&mt LSHFT A  &mt LCTRL I  &mt LALT E  &mt LGUI O       &kp SQT      &kp LG(KP_N0)      &kp PLUS   &kp D        &mt RGUI T  &mt RALT N  &mt RCTRL S  &mt RSHFT Y
+&kp TAB      &kp X        &kp C       &kp V            &kp GRAVE    &kp COLON          &kp MINUS  &kp B        &kp H       &kp J       &kp K        &kp L
+&none        &none        &none       &lt 3 LANG1      &lt 2 SPACE  &mt LSHFT LANG2    &kp BSPC   &lt 1 ENTER                                       &none
             >;
 
             sensor-bindings = <&inc_dec_kp LG(MINUS) LG(EQUAL)>;
@@ -106,8 +98,8 @@
             bindings = <
 &kp SLASH     &kp KP_MULTIPLY  &kp KP_MINUS  &kp KP_PLUS  &kp PRCNT                           &none   &none        &kp EQUAL    &kp LT        &kp GT
 &mt LSHFT N1  &mt LCTRL N2     &mt LALT N3   &mt LGUI N4  &kp N5     &kp K_MUTE      &none    &kp N6  &mt RGUI N7  &mt RALT N8  &mt RCTRL N9  &mt RSHFT N0
-&kp SEMI      &kp COMMA        &kp DOT       &kp COLON    &kp GRAVE  &trans          &none    &none   &kp LEFT     &kp DOWN     &kp UP        &kp RIGHT
-&trans        &trans           &trans        &kp CAPS     &trans     &trans          &kp DEL  &trans                                          &trans
+&kp SEMI      &kp COMMA        &kp DOT       &kp SLASH    &kp GRAVE  &kp COLON       &none    &none   &kp LEFT     &kp DOWN     &kp UP        &kp RIGHT
+&trans        &trans           &trans        &trans       &trans     &kp CAPS        &kp DEL  &trans                                          &trans
             >;
 
             sensor-bindings = <&inc_dec_kp C_VOL_DN C_VOL_UP>;
@@ -117,7 +109,7 @@
             bindings = <
 &kp BACKSLASH   &kp QMARK     &none          &none          &none                           &none      &none          &none          &kp LPAR        &kp RPAR
 &mt LSHFT EXCL  &mt LCTRL AT  &mt LALT HASH  &mt LGUI DLLR  &kp PRCNT  &none       &none    &kp CARET  &mt RGUI AMPS  &mt RALT STAR  &mt RCTRL LBKT  &mt RSHFT RBKT
-&kp SEMI        &kp COMMA     &kp DOT        &kp COLON      &kp GRAVE  &none       &none    &none      &kp PIPE       &kp KP_MINUS   &kp LBRC        &kp RBRC
+&kp SEMI        &kp COMMA     &kp DOT        &kp SLASH      &kp GRAVE  &kp COLON   &none    &none      &kp PIPE       &kp KP_MINUS   &kp LBRC        &kp RBRC
 &trans          &trans        &trans         &trans         &trans     &trans      &kp DEL  &trans                                                   &trans
             >;
         };
@@ -125,8 +117,8 @@
         FUNCTION {
             bindings = <
 &kp F1                 &kp F2                 &kp F3              &kp F4            &kp F5                         &kp F6  &kp F7         &kp F8         &kp F9         &kp F10
-&mt LSHFT LG(LS(F12))  &mt LCTRL LS(LA(F12))  &mt LALT LS(LA(H))  &mt LGUI LG(F12)  &none      &none       &none   &none   &kp RG(KP_N0)  &kp RG(MINUS)  &kp RG(EQUAL)  &kp F11
-&kp SEMI               &kp COMMA              &kp DOT             &kp COLON         &kp GRAVE  &none       &none   &none   &kp K_MUTE     &kp C_VOL_DN   &kp C_VOL_UP   &kp F12
+&mt LSHFT LS(LG(F12))  &mt LCTRL LS(LA(F12))  &mt LALT LS(LA(H))  &mt LGUI LG(F12)  &none      &none       &none   &none   &kp RG(KP_N0)  &kp RG(MINUS)  &kp RG(EQUAL)  &kp F11
+&kp SEMI               &kp COMMA              &kp DOT             &kp SLASH         &kp GRAVE  &kp COLON   &none   &none   &kp K_MUTE     &kp C_VOL_DN   &kp C_VOL_UP   &kp F12
 &trans                 &trans                 &trans              &trans            &trans     &trans      &trans  &trans                                               &trans
             >;
         };
