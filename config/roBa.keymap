@@ -99,7 +99,7 @@
 &kp SLASH     &kp KP_MULTIPLY  &kp KP_MINUS  &kp KP_PLUS  &kp PRCNT                           &none   &none        &kp EQUAL    &kp LT        &kp GT
 &mt LSHFT N1  &mt LCTRL N2     &mt LALT N3   &mt LGUI N4  &kp N5     &kp K_MUTE      &trans   &kp N6  &mt RGUI N7  &mt RALT N8  &mt RCTRL N9  &mt RSHFT N0
 &kp SEMI      &kp COMMA        &kp DOT       &kp COLON    &kp DQT    &kp TILDE       &trans   &none   &kp LEFT     &kp DOWN     &kp UP        &kp RIGHT
-&trans        &trans           &trans        &trans       &trans     &trans          &kp DEL  &trans                                          &trans
+&trans        &trans           &trans        &trans       &tdl       &kp LANG1       &kp DEL  &trans                                          &trans
             >;
 
             sensor-bindings = <&inc_dec_kp C_VOL_DN C_VOL_UP>;
