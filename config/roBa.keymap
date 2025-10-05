@@ -71,11 +71,12 @@
             bindings = <&kp LANG2>, <&kp LANG1>;
         };
 
-        tdel: tap_dance_esc_lang {
-            compatible = "zmk,behavior-tap-dance";
+        my_esclang: my_esc_lang2 {
+            compatible = "zmk,behavior-macro";
             #binding-cells = <0>;
-            tapping-term-ms = <250>;
-            bindings = <&kp ESC>, <&kp LANG2>;
+            wait-ms = <40>;
+            tap-ms = <40>;
+            bindings = <&kp ESC &kp LANG2>;
         };
 
         my_gresc: my_grave_escape {
@@ -93,7 +94,7 @@
 
         default_layer {
             bindings = <
-&tdel        &lt 5 W      &lt 7 U     &kp F       &kp Q                                      &kp Z        &kp M       &lt 7 R     &lt 5 G      &kp P
+&my_esclang  &lt 5 W      &lt 7 U     &kp F       &kp Q                                      &kp Z        &kp M       &lt 7 R     &lt 5 G      &kp P
 &mt LSHFT A  &mt LCTRL I  &mt LALT E  &mt LGUI O  &kp SLASH    &kp LG(KP_N0)      &kp EQUAL  &kp D        &mt RGUI T  &mt RALT N  &mt RCTRL S  &mt RSHFT Y
 &kp TAB      &kp X        &kp C       &kp V       &kp SQT      &lt 3 GRAVE        &kp MINUS  &kp B        &kp H       &kp J       &kp K        &kp L
 &none        &none        &none       &tdl        &lt 2 SPACE  &mt LSHFT SPACE    &kp BSPC   &lt 1 ENTER                                       &none
