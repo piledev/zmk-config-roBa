@@ -74,8 +74,10 @@
         my_esclang: my_esc_lang2 {
             compatible = "zmk,behavior-macro";
             #binding-cells = <0>;
+
             // wait-ms = <40>;
             // tap-ms = <40>;
+
             bindings = <&kp ESC &kp LANG2>;
         };
 
@@ -91,13 +93,12 @@
     keymap {
         compatible = "zmk,keymap";
 
-
         default_layer {
             bindings = <
-&my_esclang  &lt 5 W      &lt 7 U     &kp F       &kp Q                                         &kp B        &kp M       &lt 7 R     &lt 5 G      &kp P
-&mt LSHFT A  &mt LCTRL I  &mt LALT E  &mt LGUI O  &kp GRAVE    &kp LG(KP_N0)         &kp EQUAL  &kp D        &mt RGUI T  &mt RALT N  &mt RCTRL S  &mt RSHFT Y
-&kp TAB      &kp X        &kp C       &kp V       &kp SEMI     &kp MINUS             &kp BSPC   &kp Z        &kp H       &kp J       &kp K        &kp L
-&none        &none        &none       &lt 3 APOS  &lt 2 SPACE  &mt LSHFT LANG1       &tdl       &lt 1 ENTER                                       &none
+&my_esclang  &lt 5 W      &lt 7 U     &kp F       &kp Q                                        &kp B        &kp M       &lt 7 R     &lt 5 G      &kp P
+&mt LSHFT A  &mt LCTRL I  &mt LALT E  &mt LGUI O  &kp GRAVE    &kp LG(KP_N0)        &kp EQUAL  &kp D        &mt RGUI T  &mt RALT N  &mt RCTRL S  &mt RSHFT Y
+&kp TAB      &kp X        &kp C       &kp V       &kp SEMI     &kp MINUS            &kp BSPC   &kp Z        &kp H       &kp J       &kp K        &kp L
+&none        &none        &none       &lt 3 APOS  &lt 2 SPACE  &mt LSHFT LANG1      &tdl       &lt 1 ENTER                                       &none
             >;
 
             sensor-bindings = <&inc_dec_kp LG(MINUS) LG(EQUAL)>;
@@ -116,10 +117,10 @@
 
         SYM {
             bindings = <
-&kp BACKSLASH   &kp QMARK     &none          &none          &none                              &none      &none          &none          &kp LPAR        &kp RPAR
-&mt LSHFT EXCL  &mt LCTRL AT  &mt LALT HASH  &mt LGUI DLLR  &kp PRCNT  &none          &trans   &kp CARET  &mt RGUI AMPS  &mt RALT STAR  &mt RCTRL LBKT  &mt RSHFT RBKT
-&none           &none         &none          &none          &none      &none          &kp DEL  &none      &kp PIPE       &kp KP_MINUS   &kp LBRC        &kp RBRC
-&trans          &trans        &trans         &trans         &trans     &trans         &trans   &kp BSPC                                                 &trans
+&kp BACKSLASH   &kp QMARK     &none          &none          &none                           &none      &none          &none          &kp LPAR        &kp RPAR
+&mt LSHFT EXCL  &mt LCTRL AT  &mt LALT HASH  &mt LGUI DLLR  &kp PRCNT  &none       &trans   &kp CARET  &mt RGUI AMPS  &mt RALT STAR  &mt RCTRL LBKT  &mt RSHFT RBKT
+&none           &none         &none          &none          &none      &none       &kp DEL  &none      &kp PIPE       &kp KP_MINUS   &kp LBRC        &kp RBRC
+&trans          &trans        &trans         &trans         &trans     &trans      &trans   &kp BSPC                                                 &trans
             >;
         };
 
@@ -173,7 +174,7 @@
         compatible = "zmk,conditional-layers";
 
         bluetooth {
-            if-layers = <1 2>;
+            if-layers = <2 3>;
             then-layer = <4>;
         };
     };
