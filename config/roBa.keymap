@@ -74,8 +74,6 @@
         my_esclang: my_esc_lang2 {
             compatible = "zmk,behavior-macro";
             #binding-cells = <0>;
-            // wait-ms = <40>;
-            // tap-ms = <40>;
             bindings = <&kp ESC &kp LANG2>;
         };
 
@@ -94,10 +92,10 @@
 
         default_layer {
             bindings = <
-&my_esclang  &lt 5 W      &lt 7 U     &kp F       &kp Q                                         &kp B        &kp M       &lt 7 R     &lt 5 G      &kp P
-&mt LSHFT A  &mt LCTRL I  &mt LALT E  &mt LGUI O  &kp GRAVE    &kp LG(KP_N0)         &kp EQUAL  &kp D        &mt RGUI T  &mt RALT N  &mt RCTRL S  &mt RSHFT Y
-&kp TAB      &kp X        &kp C       &kp V       &kp SEMI     &kp MINUS             &kp BSPC   &kp Z        &kp H       &kp J       &kp K        &kp L
-&none        &none        &none       &lt 3 APOS  &lt 2 SPACE  &mt LSHFT LANG1       &tdl       &lt 1 ENTER                                       &none
+&my_esclang  &lt 5 W      &lt 7 U     &kp F        &kp Q                                         &kp Z        &kp M       &lt 7 R     &lt 5 G      &kp P
+&mt LSHFT A  &mt LCTRL I  &mt LALT E  &mt LGUI O   &kp GRAVE    &kp LG(KP_N0)         &kp EQUAL  &kp D        &mt RGUI T  &mt RALT N  &mt RCTRL S  &mt RSHFT Y
+&kp TAB      &kp X        &kp C       &kp V        &kp SQT      &kp MINUS             &kp BSPC   &kp B        &kp H       &kp J       &kp K        &kp L
+&none        &none        &none       &lt 3 EQUAL  &lt 2 SPACE  &mt LSHFT SPACE       &tdl       &lt 1 ENTER                                       &none
             >;
 
             sensor-bindings = <&inc_dec_kp LG(MINUS) LG(EQUAL)>;
@@ -105,10 +103,10 @@
 
         NUM {
             bindings = <
-&kp SLASH     &kp KP_MULTIPLY  &kp KP_MINUS  &kp KP_PLUS  &kp PRCNT                                          &none   &none        &kp EQUAL    &kp LT        &kp GT
-&mt LSHFT N1  &mt LCTRL N2     &mt LALT N3   &mt LGUI N4  &kp N5          &kp K_MUTE                &trans   &kp N6  &mt RGUI N7  &mt RALT N8  &mt RCTRL N9  &mt RSHFT N0
-&kp SEMI      &kp COMMA        &kp DOT       &kp EXCL     &kp QMARK       &kp EQUAL                 &trans   &none   &kp LEFT     &kp DOWN     &kp UP        &kp RIGHT
-&trans        &trans           &trans        &trans       &kp LANGUAGE_2  &mt LSHFT LANGUAGE_1      &kp DEL  &trans                                          &trans
+&kp SLASH     &kp KP_MULTIPLY  &kp KP_MINUS  &kp KP_PLUS   &kp PRCNT                          &none   &none        &kp EQUAL    &kp LT        &kp GT
+&mt LSHFT N1  &mt LCTRL N2     &mt LALT N3   &mt LGUI N4   &kp N5     &kp K_MUTE      &trans  &kp N6  &mt RGUI N7  &mt RALT N8  &mt RCTRL N9  &mt RSHFT N0
+&kp SEMI      &kp COMMA        &kp DOT       &kp COLON     &kp EXCL   &kp QMARK       &trans  &none   &kp LEFT     &kp DOWN     &kp UP        &kp RIGHT
+&trans        &trans           &trans        &lt 3 PLUS    &trans     &trans          &trans  &trans                                          &trans
             >;
 
             sensor-bindings = <&inc_dec_kp C_VOL_DN C_VOL_UP>;
