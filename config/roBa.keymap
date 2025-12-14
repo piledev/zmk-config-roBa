@@ -33,36 +33,26 @@
 / {
     combos {
         compatible = "zmk,combos";
-
-        r_snipe {
-            bindings = <&mo 6>;
-            key-positions = <7 8>;
-        };
-
-        l_snipe {
-            bindings = <&mo 6>;
-            key-positions = <1 2>;
-        };
     };
 
     macros {
-        to_layer_0: to_layer_0 {
-            compatible = "zmk,behavior-macro-one-param";
-            #binding-cells = <1>;
-            bindings = <&to 0 &macro_param_1to1 &kp MACRO_PLACEHOLDER>;
-            label = "TO_LAYER_0";
-        };
+        // to_layer_0: to_layer_0 {
+        //     compatible = "zmk,behavior-macro-one-param";
+        //     #binding-cells = <1>;
+        //     bindings = <&to 0 &macro_param_1to1 &kp MACRO_PLACEHOLDER>;
+        //     label = "TO_LAYER_0";
+        // };
     };
 
     behaviors {
-        lt_to_layer_0: lt_to_layer_0 {
-            compatible = "zmk,behavior-hold-tap";
-            label = "LAYER_TAP_TO_0";
-            bindings = <&mo>, <&to_layer_0>;
+        // lt_to_layer_0: lt_to_layer_0 {
+        //     compatible = "zmk,behavior-hold-tap";
+        //     label = "LAYER_TAP_TO_0";
+        //     bindings = <&mo>, <&to_layer_0>;
 
-            #binding-cells = <2>;
-            tapping-term-ms = <200>;
-        };
+        //     #binding-cells = <2>;
+        //     tapping-term-ms = <200>;
+        // };
 
         tdl: tap_dance_lang {
             compatible = "zmk,behavior-tap-dance";
@@ -77,13 +67,13 @@
             bindings = <&kp ESC &kp LANG2>;
         };
 
-        my_gresc: my_grave_escape {
-            compatible = "zmk,behavior-mod-morph";
-            #binding-cells = <0>;
-            bindings = <&kp ESC>, <&kp GRAVE>;
+        // my_gresc: my_grave_escape {
+        //     compatible = "zmk,behavior-mod-morph";
+        //     #binding-cells = <0>;
+        //     bindings = <&kp ESC>, <&kp GRAVE>;
 
-            mods = <(MOD_LALT|MOD_RALT)>;
-        };
+        //     mods = <(MOD_LALT|MOD_RALT)>;
+        // };
     };
 
     keymap {
