@@ -71,13 +71,13 @@
             compatible = "zmk,behavior-macro";
             #binding-cells = <0>;
             bindings = <&kp LANG2 &kp SPACE &kp LANG1>;
-        }
+        };
 
         space_en: space_en {
             compatible = "zmk,behavior-macro";
             #binding-cells = <0>;
             bindings = <&kp LANG2 &kp SPACE>;
-        }
+        };
 
         // my_gresc: my_grave_escape {
         //     compatible = "zmk,behavior-mod-morph";
