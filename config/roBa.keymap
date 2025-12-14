@@ -105,7 +105,7 @@
 &kp SLASH      &kp KP_MULTIPLY &kp KP_MINUS &kp KP_PLUS    &kp PRCNT                         &none   &kp EXCL     &kp EQUAL    &kp LT        &kp GT
 &kp N1         &kp N2          &kp N3       &kp N4         &kp N5    &kp K_MUTE      &trans  &kp N6  &mt RGUI N7  &mt RALT N8  &mt RCTRL N9  &mt RSHFT N0
 &mt LSHFT SEMI &mt LCTRL COMMA &mt LALT DOT &mt LGUI COLON &trans    &trans          &trans  &none   &kp LEFT     &kp DOWN     &kp UP        &kp RIGHT
-&trans         &trans          &trans       &kp LANG1      &tdl      &trans          &kp DEL &trans                                          &trans
+&trans         &trans          &trans       &kp LANG1      &tdl      &trans          &trans  &trans                                          &trans
             >;
 
             sensor-bindings = <&inc_dec_kp C_VOL_DN C_VOL_UP>;
@@ -113,10 +113,10 @@
 
         SYM {
             bindings = <
-&kp BACKSLASH  &kp QMARK       &none        &none          &none                            &none     &none         &none         &kp LPAR       &kp RPAR
-&kp EXCL       &kp AT          &kp HASH     &kp DLLR       &kp PRCNT &none           &trans &kp CARET &mt RGUI AMPS &mt RALT STAR &mt RCTRL LBRC &mt RSHFT RBRC
-&mt LSHFT SEMI &mt LCTRL COMMA &mt LALT DOT &mt LGUI COLON &trans    &trans          &trans &none     &kp PIPE      &kp KP_MINUS  &kp LBKT       &kp RBKT
-&trans         &trans          &trans       &trans         &trans    &trans          &trans &trans                                               &trans
+&kp BACKSLASH  &kp QMARK       &none        &none          &none                             &none     &none         &none         &kp LPAR       &kp RPAR
+&kp EXCL       &kp AT          &kp HASH     &kp DLLR       &kp PRCNT &none           &trans  &kp CARET &mt RGUI AMPS &mt RALT STAR &mt RCTRL LBRC &mt RSHFT RBRC
+&mt LSHFT SEMI &mt LCTRL COMMA &mt LALT DOT &mt LGUI COLON &trans    &trans          &trans  &none     &kp PIPE      &kp KP_MINUS  &kp LBKT       &kp RBKT
+&trans         &trans          &trans       &trans         &trans    &trans          &kp DEL &trans                                               &trans
             >;
         };
 
