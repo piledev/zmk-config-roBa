@@ -54,12 +54,12 @@
         //     tapping-term-ms = <200>;
         // };
 
-        tdl: tap_dance_lang {
-            compatible = "zmk,behavior-tap-dance";
-            #binding-cells = <0>;
-            tapping-term-ms = <250>;
-            bindings = <&kp LANG2>, <&kp LANG1>;
-        };
+        // tdl: tap_dance_lang {
+        //     compatible = "zmk,behavior-tap-dance";
+        //     #binding-cells = <0>;
+        //     tapping-term-ms = <250>;
+        //     bindings = <&kp LANG2>, <&kp LANG1>;
+        // };
 
         my_esclang: my_esc_lang2 {
             compatible = "zmk,behavior-macro";
@@ -73,11 +73,11 @@
             bindings = <&kp LANG2 &kp SPACE &kp LANG1>;
         };
 
-        space_en: space_en {
-            compatible = "zmk,behavior-macro";
-            #binding-cells = <0>;
-            bindings = <&kp LANG2 &kp SPACE>;
-        };
+        // space_en: space_en {
+        //     compatible = "zmk,behavior-macro";
+        //     #binding-cells = <0>;
+        //     bindings = <&kp LANG2 &kp SPACE>;
+        // };
 
         // my_gresc: my_grave_escape {
         //     compatible = "zmk,behavior-mod-morph";
@@ -95,8 +95,8 @@
             bindings = <
 &my_esclang    &kp W        &kp U       &kp F       &kp Q                                        &kp Z        &kp M       &lt 7 R     &lt 5 G      &kp P
 &kp A          &kp I        &kp E       &kp O       &kp SQT      &kp LG(KP_N0)        &none      &kp D        &mt RGUI T  &mt RALT N  &mt RCTRL S  &mt RSHFT Y
-&mt LSHFT TAB  &mt LCTRL X  &mt LALT C  &mt LGUI V  &kp GRAVE    &mo 3                &kp EQUAL  &kp B        &kp H       &kp J       &kp K        &kp L
-&none          &none        &none       &tdl        &lt 2 SPACE  &mt LSHFT MINUS      &kp BSPC   &lt 1 ENTER                                       &kp DEL
+&mt LSHFT TAB  &mt LCTRL X  &mt LALT C  &mt LGUI V  &kp GRAVE    &mo 1                &kp EQUAL  &kp B        &kp H       &kp J       &kp K        &kp L
+&none          &none        &none       &mo 3       &lt 2 SPACE  &mt LSHFT MINUS      &kp BSPC   &lt 1 ENTER                                       &kp DEL
             >;
 
             sensor-bindings = <&inc_dec_kp LG(MINUS) LG(EQUAL)>;
@@ -104,10 +104,10 @@
 
         NUM {
             bindings = <
-&kp SLASH       &kp KP_MULTIPLY  &kp KP_MINUS  &kp KP_PLUS     &none                           &none   &kp EXCL     &kp EQUAL    &kp LT        &kp GT
-&kp N1          &kp N2           &kp N3        &kp N4          &kp N5  &kp K_MUTE      &trans  &kp N6  &mt RGUI N7  &mt RALT N8  &mt RCTRL N9  &mt RSHFT N0
-&mt LSHFT SEMI  &mt LCTRL COMMA  &mt LALT DOT  &mt LGUI COLON  &trans  &trans          &trans  &none   &kp LEFT     &kp DOWN     &kp UP        &kp RIGHT
-&trans          &trans           &trans        &kp LANG1       &tdl    &trans          &trans  &trans                                          &trans
+&kp SLASH       &kp KP_MULTIPLY  &kp KP_MINUS  &kp KP_PLUS     &none                                 &none   &kp EXCL     &kp EQUAL    &kp LT        &kp GT
+&kp N1          &kp N2           &kp N3        &kp N4          &kp N5     &kp K_MUTE         &trans  &kp N6  &mt RGUI N7  &mt RALT N8  &mt RCTRL N9  &mt RSHFT N0
+&mt LSHFT SEMI  &mt LCTRL COMMA  &mt LALT DOT  &mt LGUI COLON  &trans     &trans             &trans  &none   &kp LEFT     &kp DOWN     &kp UP        &kp RIGHT
+&trans          &trans           &trans        &space_ja       &kp LANG2  &mt LSHFT LANG1    &trans  &trans                                          &trans
             >;
 
             sensor-bindings = <&inc_dec_kp C_VOL_DN C_VOL_UP>;
