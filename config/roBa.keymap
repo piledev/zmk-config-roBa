@@ -89,7 +89,7 @@
             bindings = <
 &my_esclang  &kp W        &kp U       &kp F       &kp Q                                       &kp Z        &kp M       &lt 7 R     &lt 5 G      &kp P
 &mt LSHFT A  &mt LCTRL I  &mt LALT E  &mt LGUI O  &kp SQT      &none                &none     &kp D        &mt RGUI T  &mt RALT N  &mt RCTRL S  &mt RSHFT Y
-&kp TAB      &kp X        &kp C       &kp V       &kp GRAVE    &mo 1                &mo 2     &kp B        &kp H       &kp J       &kp K        &kp L
+&kp TAB      &kp X        &kp C       &kp V       &kp GRAVE    &mo 1                &mo 2     &kp H        &kp J       &kp K       &kp L        &kp B
 &none        &none        &none       &mo 3       &lt 2 SPACE  &mt LSHFT MINUS      &kp BSPC  &lt 1 ENTER                                       &kp ENTER
             >;
 
@@ -100,7 +100,7 @@
             bindings = <
 &kp SLASH     &kp KP_MULTIPLY  &kp KP_MINUS  &kp KP_PLUS  &none                                   &none      &kp EXCL     &kp EQUAL    &kp LT        &kp GT
 &mt LSHFT N1  &mt LCTRL N2     &mt LALT N3   &mt LGUI N4  &kp N5     &trans               &trans  &kp N6     &mt RGUI N7  &mt RALT N8  &mt RCTRL N9  &mt RSHFT N0
-&kp SEMI      &kp COMMA        &kp DOT       &kp COLON    &kp TILDE  &trans               &trans  &kp RC(N)  &kp LEFT     &kp DOWN     &kp UP        &kp RIGHT
+&kp SEMI      &kp COMMA        &kp DOT       &kp COLON    &kp TILDE  &trans               &trans  &kp LEFT   &kp DOWN     &kp UP       &kp RIGHT     &kp RC(N)
 &trans        &trans           &trans        &space_ja    &kp LANG2  &mt LSHFT LANG1      &trans  &trans                                             &trans
             >;
 
@@ -118,10 +118,10 @@
 
         FUNCTION {
             bindings = <
-&kp F1                 &kp F2                 &kp F3              &kp F4            &kp F5                      &kp F6  &kp F7         &kp F8         &kp F9         &kp F10
-&mt LSHFT LS(LG(F12))  &mt LCTRL LS(LA(F12))  &mt LALT LS(LA(H))  &mt LGUI LG(F12)  &none   &none       &none   &none   &kp RG(KP_N0)  &kp RG(MINUS)  &kp RG(EQUAL)  &kp F11
-&kp LSHFT              &kp LCTRL              &kp LALT            &kp LGUI          &trans  &trans      &trans  &none   &kp K_MUTE     &kp C_VOL_DN   &kp C_VOL_UP   &kp F12
-&trans                 &trans                 &trans              &trans            &trans  &trans      &trans  &trans                                               &trans
+&kp F1                 &kp F2                 &kp F3              &kp F4            &kp F5                      &kp F6         &kp F7         &kp F8         &kp F9   &kp F10
+&mt LSHFT LS(LG(F12))  &mt LCTRL LS(LA(F12))  &mt LALT LS(LA(H))  &mt LGUI LG(F12)  &none   &none       &none   &kp RG(KP_N0)  &kp RG(MINUS)  &kp RG(EQUAL)  &kp F11  &kp F12
+&kp LSHFT              &kp LCTRL              &kp LALT            &kp LGUI          &trans  &trans      &trans  &kp K_MUTE     &kp C_VOL_DN   &kp C_VOL_UP   &kp F13  &kp F14
+&trans                 &trans                 &trans              &trans            &trans  &trans      &trans  &trans                                                &trans
             >;
         };
 
